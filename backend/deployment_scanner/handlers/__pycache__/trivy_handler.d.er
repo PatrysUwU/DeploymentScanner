@@ -1,0 +1,8 @@
+##[pylyzer] failed /home/patrys/repos/deployment_scanner/backend/handlers/trivy_handler.py 1762470300 540
+.subprocess: Never
+
+.TrivyHandler: ClassType
+.TrivyHandler.path: Str
+.TrivyHandler.__call__: (path: Str := Str) -> trivy_handler.TrivyHandler
+.TrivyHandler.scan_image: (self: trivy_handler.TrivyHandler, image: Str, output_path: Str := Str) -> NoneType
+

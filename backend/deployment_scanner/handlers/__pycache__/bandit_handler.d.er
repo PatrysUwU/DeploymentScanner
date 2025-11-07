@@ -1,0 +1,8 @@
+##[pylyzer] failed /home/patrys/repos/deployment_scanner/backend/handlers/bandit_handler.py 1762470183 507
+.subprocess: Never
+
+.BanditHandler: ClassType
+.BanditHandler.path: Str
+.BanditHandler.__call__: (path: Str := Str) -> bandit_handler.BanditHandler
+.BanditHandler.scan_repo: (self: bandit_handler.BanditHandler, output_path: Str := Str) -> NoneType
+
