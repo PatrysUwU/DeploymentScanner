@@ -1,0 +1,2553 @@
+{
+    "trivy_image": {
+        "tool": "trivy",
+        "type": "image",
+        "image": "python:3.11.4-alpine",
+        "success": true,
+        "output_raw": [
+            {
+                "Target": "python:3.11.4-alpine (alpine 3.18.3)",
+                "Type": "alpine",
+                "Vulnerabilities": [
+                    {
+                        "VulnerabilityID": "CVE-2023-42363",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T22:15:07.94Z",
+                        "LastModifiedDate": "2024-11-21T08:22:28.403Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42363",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42364",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.313Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.17Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42364",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42365",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.373Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.393Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42365",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42366",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+                                "V3Score": 7.1
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.42Z",
+                        "LastModifiedDate": "2024-12-06T14:15:19.53Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42366",
+                        "FixedVersion": "1.36.1-r6"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42363",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T22:15:07.94Z",
+                        "LastModifiedDate": "2024-11-21T08:22:28.403Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42363",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42364",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.313Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.17Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42364",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42365",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.373Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.393Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42365",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42366",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+                                "V3Score": 7.1
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.42Z",
+                        "LastModifiedDate": "2024-12-06T14:15:19.53Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42366",
+                        "FixedVersion": "1.36.1-r6"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-37371",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.20.1-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+                                "V3Score": 9.1
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 6.5
+                            }
+                        },
+                        "PublishedDate": "2024-06-28T23:15:11.603Z",
+                        "LastModifiedDate": "2025-11-03T21:16:13.997Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-37371",
+                        "FixedVersion": "1.20.2-r1"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-37370",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.20.1-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2024-06-28T22:15:02.293Z",
+                        "LastModifiedDate": "2025-03-13T19:15:45.213Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-37370",
+                        "FixedVersion": "1.20.2-r1"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-36054",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.20.1-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 6.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 6.5
+                            }
+                        },
+                        "PublishedDate": "2023-08-07T19:15:09.84Z",
+                        "LastModifiedDate": "2024-11-21T08:09:15.227Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-36054",
+                        "FixedVersion": "1.20.2-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-5363",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2023-10-25T18:17:43.613Z",
+                        "LastModifiedDate": "2025-11-03T22:16:32.357Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-5363",
+                        "FixedVersion": "3.1.4-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-6119",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "PublishedDate": "2024-09-03T16:15:07.177Z",
+                        "LastModifiedDate": "2025-06-03T10:51:54.117Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-6119",
+                        "FixedVersion": "3.1.7-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-5678",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            }
+                        },
+                        "PublishedDate": "2023-11-06T16:15:42.67Z",
+                        "LastModifiedDate": "2025-11-03T22:16:32.67Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-5678",
+                        "FixedVersion": "3.1.4-r1"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-6129",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+                                "V3Score": 6.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+                                "V3Score": 6.5
+                            }
+                        },
+                        "PublishedDate": "2024-01-09T17:15:12.147Z",
+                        "LastModifiedDate": "2025-06-20T16:15:27.797Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-6129",
+                        "FixedVersion": "3.1.4-r3"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-6237",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "PublishedDate": "2024-04-25T07:15:45.27Z",
+                        "LastModifiedDate": "2024-11-21T08:43:25.997Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-6237",
+                        "FixedVersion": "3.1.4-r4"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-0727",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "ghsa": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            }
+                        },
+                        "PublishedDate": "2024-01-26T09:15:07.637Z",
+                        "LastModifiedDate": "2025-11-03T22:16:34.223Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-0727",
+                        "FixedVersion": "3.1.4-r5"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-13176",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 4.7
+                            }
+                        },
+                        "PublishedDate": "2025-01-20T14:15:26.247Z",
+                        "LastModifiedDate": "2025-11-03T20:16:08.203Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-13176",
+                        "FixedVersion": "3.1.8-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-4603",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            }
+                        },
+                        "PublishedDate": "2024-05-16T16:15:10.643Z",
+                        "LastModifiedDate": "2024-11-21T09:43:11.753Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-4603",
+                        "FixedVersion": "3.1.5-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-4741",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "V3Score": 5.6
+                            }
+                        },
+                        "PublishedDate": "2024-11-13T11:15:04.48Z",
+                        "LastModifiedDate": "2025-11-04T18:16:42.5Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-4741",
+                        "FixedVersion": "3.1.6-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-5535",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "PublishedDate": "2024-06-27T11:15:24.447Z",
+                        "LastModifiedDate": "2025-11-03T23:17:30.51Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-5535",
+                        "FixedVersion": "3.1.6-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-2511",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 3.7
+                            }
+                        },
+                        "PublishedDate": "2024-04-08T14:15:07.66Z",
+                        "LastModifiedDate": "2025-11-03T22:16:50.9Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-2511",
+                        "FixedVersion": "3.1.4-r6"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-9143",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 3.7
+                            }
+                        },
+                        "PublishedDate": "2024-10-16T17:15:18.13Z",
+                        "LastModifiedDate": "2025-11-03T23:17:33.46Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-9143",
+                        "FixedVersion": "3.1.7-r1"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-45491",
+                        "Status": "fixed",
+                        "InstalledVersion": "2.5.0-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "V3Score": 9.8
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2024-08-30T03:15:03.85Z",
+                        "LastModifiedDate": "2025-11-04T17:16:15.26Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-45491",
+                        "FixedVersion": "2.6.3-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-45492",
+                        "Status": "fixed",
+                        "InstalledVersion": "2.5.0-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "V3Score": 9.8
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 6.2
+                            }
+                        },
+                        "PublishedDate": "2024-08-30T03:15:03.93Z",
+                        "LastModifiedDate": "2025-11-04T17:16:15.43Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-45492",
+                        "FixedVersion": "2.6.3-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-52425",
+                        "Status": "fixed",
+                        "InstalledVersion": "2.5.0-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2024-02-04T20:15:46.063Z",
+                        "LastModifiedDate": "2025-11-04T19:16:22.74Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-52425",
+                        "FixedVersion": "2.6.0-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-28757",
+                        "Status": "fixed",
+                        "InstalledVersion": "2.5.0-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2024-03-10T05:15:06.57Z",
+                        "LastModifiedDate": "2025-11-04T22:15:59.8Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-28757",
+                        "FixedVersion": "2.6.2-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-45490",
+                        "Status": "fixed",
+                        "InstalledVersion": "2.5.0-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2024-08-30T03:15:03.757Z",
+                        "LastModifiedDate": "2025-11-04T17:16:15.06Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-45490",
+                        "FixedVersion": "2.6.3-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-8176",
+                        "Status": "fixed",
+                        "InstalledVersion": "2.5.0-r1",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2025-03-14T09:15:14.157Z",
+                        "LastModifiedDate": "2025-11-25T11:15:45.65Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-8176",
+                        "FixedVersion": "2.7.0-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-52426",
+                        "Status": "fixed",
+                        "InstalledVersion": "2.5.0-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            }
+                        },
+                        "PublishedDate": "2024-02-04T20:15:46.12Z",
+                        "LastModifiedDate": "2025-11-04T19:16:22.923Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-52426",
+                        "FixedVersion": "2.6.0-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-50602",
+                        "Status": "fixed",
+                        "InstalledVersion": "2.5.0-r1",
+                        "CVSS": {
+                            "bitnami": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "PublishedDate": "2024-10-27T05:15:04.09Z",
+                        "LastModifiedDate": "2025-10-15T17:54:22.117Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-50602",
+                        "FixedVersion": "2.6.4-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-5363",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2023-10-25T18:17:43.613Z",
+                        "LastModifiedDate": "2025-11-03T22:16:32.357Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-5363",
+                        "FixedVersion": "3.1.4-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-6119",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "PublishedDate": "2024-09-03T16:15:07.177Z",
+                        "LastModifiedDate": "2025-06-03T10:51:54.117Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-6119",
+                        "FixedVersion": "3.1.7-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-5678",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            }
+                        },
+                        "PublishedDate": "2023-11-06T16:15:42.67Z",
+                        "LastModifiedDate": "2025-11-03T22:16:32.67Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-5678",
+                        "FixedVersion": "3.1.4-r1"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-6129",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+                                "V3Score": 6.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+                                "V3Score": 6.5
+                            }
+                        },
+                        "PublishedDate": "2024-01-09T17:15:12.147Z",
+                        "LastModifiedDate": "2025-06-20T16:15:27.797Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-6129",
+                        "FixedVersion": "3.1.4-r3"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-6237",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "PublishedDate": "2024-04-25T07:15:45.27Z",
+                        "LastModifiedDate": "2024-11-21T08:43:25.997Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-6237",
+                        "FixedVersion": "3.1.4-r4"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-0727",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "ghsa": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            }
+                        },
+                        "PublishedDate": "2024-01-26T09:15:07.637Z",
+                        "LastModifiedDate": "2025-11-03T22:16:34.223Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-0727",
+                        "FixedVersion": "3.1.4-r5"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-13176",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 4.7
+                            }
+                        },
+                        "PublishedDate": "2025-01-20T14:15:26.247Z",
+                        "LastModifiedDate": "2025-11-03T20:16:08.203Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-13176",
+                        "FixedVersion": "3.1.8-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-4603",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            }
+                        },
+                        "PublishedDate": "2024-05-16T16:15:10.643Z",
+                        "LastModifiedDate": "2024-11-21T09:43:11.753Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-4603",
+                        "FixedVersion": "3.1.5-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-4741",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "V3Score": 5.6
+                            }
+                        },
+                        "PublishedDate": "2024-11-13T11:15:04.48Z",
+                        "LastModifiedDate": "2025-11-04T18:16:42.5Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-4741",
+                        "FixedVersion": "3.1.6-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-5535",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "PublishedDate": "2024-06-27T11:15:24.447Z",
+                        "LastModifiedDate": "2025-11-03T23:17:30.51Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-5535",
+                        "FixedVersion": "3.1.6-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-2511",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 3.7
+                            }
+                        },
+                        "PublishedDate": "2024-04-08T14:15:07.66Z",
+                        "LastModifiedDate": "2025-11-03T22:16:50.9Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-2511",
+                        "FixedVersion": "3.1.4-r6"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-9143",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 3.7
+                            }
+                        },
+                        "PublishedDate": "2024-10-16T17:15:18.13Z",
+                        "LastModifiedDate": "2025-11-03T23:17:33.46Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-9143",
+                        "FixedVersion": "3.1.7-r1"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2025-26519",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.2.4-r1",
+                        "CVSS": {},
+                        "PublishedDate": "2025-02-14T04:15:09.05Z",
+                        "LastModifiedDate": "2025-02-14T17:15:23.09Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2025-26519",
+                        "FixedVersion": "1.2.4-r3"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2025-26519",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.2.4-r1",
+                        "CVSS": {},
+                        "PublishedDate": "2025-02-14T04:15:09.05Z",
+                        "LastModifiedDate": "2025-02-14T17:15:23.09Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2025-26519",
+                        "FixedVersion": "1.2.4-r3"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-7104",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.41.2-r2",
+                        "CVSS": {
+                            "bitnami": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "V3Score": 7.3
+                            },
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "V3Score": 7.3
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "V3Score": 7.3
+                            }
+                        },
+                        "PublishedDate": "2023-12-29T10:15:13.89Z",
+                        "LastModifiedDate": "2025-11-03T22:16:33.307Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-7104",
+                        "FixedVersion": "3.41.2-r3"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42363",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T22:15:07.94Z",
+                        "LastModifiedDate": "2024-11-21T08:22:28.403Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42363",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42364",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.313Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.17Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42364",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42365",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.373Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.393Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42365",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42366",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+                                "V3Score": 7.1
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.42Z",
+                        "LastModifiedDate": "2024-12-06T14:15:19.53Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42366",
+                        "FixedVersion": "1.36.1-r6"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2025-31115",
+                        "Status": "fixed",
+                        "InstalledVersion": "5.4.3-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2025-04-03T17:15:30.54Z",
+                        "LastModifiedDate": "2025-04-07T14:18:34.453Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2025-31115",
+                        "FixedVersion": "5.4.3-r1"
+                    }
+                ]
+            },
+            {
+                "Target": "Python",
+                "Type": "python-pkg",
+                "Vulnerabilities": [
+                    {
+                        "VulnerabilityID": "CVE-2023-5752",
+                        "Status": "fixed",
+                        "InstalledVersion": "23.1.2",
+                        "CVSS": {
+                            "bitnami": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+                                "V3Score": 3.3
+                            },
+                            "ghsa": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+                                "V3Score": 5.5
+                            },
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+                                "V3Score": 3.3
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+                                "V3Score": 3.3
+                            }
+                        },
+                        "PublishedDate": "2023-10-25T18:17:44.867Z",
+                        "LastModifiedDate": "2025-11-03T18:15:41.173Z",
+                        "DataSource": {
+                            "ID": "ghsa",
+                            "Name": "GitHub Security Advisory pip",
+                            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-5752",
+                        "FixedVersion": "23.3"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2025-8869",
+                        "Status": "fixed",
+                        "InstalledVersion": "23.1.2",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+                                "V3Score": 5.3
+                            }
+                        },
+                        "PublishedDate": "2025-09-24T15:15:41.293Z",
+                        "LastModifiedDate": "2025-11-03T18:17:02.783Z",
+                        "DataSource": {
+                            "ID": "ghsa",
+                            "Name": "GitHub Security Advisory pip",
+                            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2025-8869",
+                        "FixedVersion": "25.3"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-6345",
+                        "Status": "fixed",
+                        "InstalledVersion": "65.5.1",
+                        "CVSS": {
+                            "bitnami": {
+                                "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 8.8
+                            },
+                            "ghsa": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 8.8
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 8.8
+                            }
+                        },
+                        "PublishedDate": "2024-07-15T01:15:01.73Z",
+                        "LastModifiedDate": "2025-11-04T17:16:16.143Z",
+                        "DataSource": {
+                            "ID": "ghsa",
+                            "Name": "GitHub Security Advisory pip",
+                            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-6345",
+                        "FixedVersion": "70.0.0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2025-47273",
+                        "Status": "fixed",
+                        "InstalledVersion": "65.5.1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "V3Score": 8.8
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L",
+                                "V3Score": 7.1
+                            }
+                        },
+                        "PublishedDate": "2025-05-17T16:15:19.11Z",
+                        "LastModifiedDate": "2025-06-12T16:29:01.66Z",
+                        "DataSource": {
+                            "ID": "ghsa",
+                            "Name": "GitHub Security Advisory pip",
+                            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2025-47273",
+                        "FixedVersion": "78.1.1"
+                    }
+                ]
+            }
+        ],
+        "errors": "2025-11-30T19:08:10+01:00\tINFO\t[vuln] Vulnerability scanning is enabled\n2025-11-30T19:08:10+01:00\tINFO\t[secret] Secret scanning is enabled\n2025-11-30T19:08:10+01:00\tINFO\t[secret] If your scanning is slow, please try '--scanners vuln' to disable secret scanning\n2025-11-30T19:08:10+01:00\tINFO\t[secret] Please see https://trivy.dev/v0.67/docs/scanner/secret#recommendation for faster secret detection\n2025-11-30T19:08:12+01:00\tINFO\tDetected OS\tfamily=\"alpine\" version=\"3.18.3\"\n2025-11-30T19:08:12+01:00\tINFO\t[alpine] Detecting vulnerabilities...\tos_version=\"3.18\" repository=\"3.18\" pkg_num=38\n2025-11-30T19:08:12+01:00\tINFO\tNumber of language-specific files\tnum=1\n2025-11-30T19:08:12+01:00\tINFO\t[python-pkg] Detecting vulnerabilities...\n2025-11-30T19:08:12+01:00\tWARN\tUsing severities from other vendors for some vulnerabilities. Read https://trivy.dev/v0.67/docs/scanner/vulnerability#severity-selection for details.\n2025-11-30T19:08:12+01:00\tWARN\tThis OS version is no longer supported by the distribution\tfamily=\"alpine\" version=\"3.18.3\"\n2025-11-30T19:08:12+01:00\tWARN\tThe vulnerability detection may be insufficient because security updates are not provided\n",
+        "results": [
+            {
+                "Target": "python:3.11.4-alpine (alpine 3.18.3)",
+                "Type": "alpine",
+                "Vulnerabilities": [
+                    {
+                        "VulnerabilityID": "CVE-2023-42363",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T22:15:07.94Z",
+                        "LastModifiedDate": "2024-11-21T08:22:28.403Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42363",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42364",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.313Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.17Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42364",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42365",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.373Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.393Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42365",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42366",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+                                "V3Score": 7.1
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.42Z",
+                        "LastModifiedDate": "2024-12-06T14:15:19.53Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42366",
+                        "FixedVersion": "1.36.1-r6"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42363",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T22:15:07.94Z",
+                        "LastModifiedDate": "2024-11-21T08:22:28.403Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42363",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42364",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.313Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.17Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42364",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42365",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.373Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.393Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42365",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42366",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+                                "V3Score": 7.1
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.42Z",
+                        "LastModifiedDate": "2024-12-06T14:15:19.53Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42366",
+                        "FixedVersion": "1.36.1-r6"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-37371",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.20.1-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+                                "V3Score": 9.1
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 6.5
+                            }
+                        },
+                        "PublishedDate": "2024-06-28T23:15:11.603Z",
+                        "LastModifiedDate": "2025-11-03T21:16:13.997Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-37371",
+                        "FixedVersion": "1.20.2-r1"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-37370",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.20.1-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2024-06-28T22:15:02.293Z",
+                        "LastModifiedDate": "2025-03-13T19:15:45.213Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-37370",
+                        "FixedVersion": "1.20.2-r1"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-36054",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.20.1-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 6.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 6.5
+                            }
+                        },
+                        "PublishedDate": "2023-08-07T19:15:09.84Z",
+                        "LastModifiedDate": "2024-11-21T08:09:15.227Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-36054",
+                        "FixedVersion": "1.20.2-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-5363",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2023-10-25T18:17:43.613Z",
+                        "LastModifiedDate": "2025-11-03T22:16:32.357Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-5363",
+                        "FixedVersion": "3.1.4-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-6119",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "PublishedDate": "2024-09-03T16:15:07.177Z",
+                        "LastModifiedDate": "2025-06-03T10:51:54.117Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-6119",
+                        "FixedVersion": "3.1.7-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-5678",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            }
+                        },
+                        "PublishedDate": "2023-11-06T16:15:42.67Z",
+                        "LastModifiedDate": "2025-11-03T22:16:32.67Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-5678",
+                        "FixedVersion": "3.1.4-r1"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-6129",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+                                "V3Score": 6.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+                                "V3Score": 6.5
+                            }
+                        },
+                        "PublishedDate": "2024-01-09T17:15:12.147Z",
+                        "LastModifiedDate": "2025-06-20T16:15:27.797Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-6129",
+                        "FixedVersion": "3.1.4-r3"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-6237",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "PublishedDate": "2024-04-25T07:15:45.27Z",
+                        "LastModifiedDate": "2024-11-21T08:43:25.997Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-6237",
+                        "FixedVersion": "3.1.4-r4"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-0727",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "ghsa": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            }
+                        },
+                        "PublishedDate": "2024-01-26T09:15:07.637Z",
+                        "LastModifiedDate": "2025-11-03T22:16:34.223Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-0727",
+                        "FixedVersion": "3.1.4-r5"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-13176",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 4.7
+                            }
+                        },
+                        "PublishedDate": "2025-01-20T14:15:26.247Z",
+                        "LastModifiedDate": "2025-11-03T20:16:08.203Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-13176",
+                        "FixedVersion": "3.1.8-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-4603",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            }
+                        },
+                        "PublishedDate": "2024-05-16T16:15:10.643Z",
+                        "LastModifiedDate": "2024-11-21T09:43:11.753Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-4603",
+                        "FixedVersion": "3.1.5-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-4741",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "V3Score": 5.6
+                            }
+                        },
+                        "PublishedDate": "2024-11-13T11:15:04.48Z",
+                        "LastModifiedDate": "2025-11-04T18:16:42.5Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-4741",
+                        "FixedVersion": "3.1.6-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-5535",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "PublishedDate": "2024-06-27T11:15:24.447Z",
+                        "LastModifiedDate": "2025-11-03T23:17:30.51Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-5535",
+                        "FixedVersion": "3.1.6-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-2511",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 3.7
+                            }
+                        },
+                        "PublishedDate": "2024-04-08T14:15:07.66Z",
+                        "LastModifiedDate": "2025-11-03T22:16:50.9Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-2511",
+                        "FixedVersion": "3.1.4-r6"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-9143",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 3.7
+                            }
+                        },
+                        "PublishedDate": "2024-10-16T17:15:18.13Z",
+                        "LastModifiedDate": "2025-11-03T23:17:33.46Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-9143",
+                        "FixedVersion": "3.1.7-r1"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-45491",
+                        "Status": "fixed",
+                        "InstalledVersion": "2.5.0-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "V3Score": 9.8
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2024-08-30T03:15:03.85Z",
+                        "LastModifiedDate": "2025-11-04T17:16:15.26Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-45491",
+                        "FixedVersion": "2.6.3-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-45492",
+                        "Status": "fixed",
+                        "InstalledVersion": "2.5.0-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "V3Score": 9.8
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 6.2
+                            }
+                        },
+                        "PublishedDate": "2024-08-30T03:15:03.93Z",
+                        "LastModifiedDate": "2025-11-04T17:16:15.43Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-45492",
+                        "FixedVersion": "2.6.3-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-52425",
+                        "Status": "fixed",
+                        "InstalledVersion": "2.5.0-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2024-02-04T20:15:46.063Z",
+                        "LastModifiedDate": "2025-11-04T19:16:22.74Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-52425",
+                        "FixedVersion": "2.6.0-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-28757",
+                        "Status": "fixed",
+                        "InstalledVersion": "2.5.0-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2024-03-10T05:15:06.57Z",
+                        "LastModifiedDate": "2025-11-04T22:15:59.8Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-28757",
+                        "FixedVersion": "2.6.2-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-45490",
+                        "Status": "fixed",
+                        "InstalledVersion": "2.5.0-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2024-08-30T03:15:03.757Z",
+                        "LastModifiedDate": "2025-11-04T17:16:15.06Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-45490",
+                        "FixedVersion": "2.6.3-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-8176",
+                        "Status": "fixed",
+                        "InstalledVersion": "2.5.0-r1",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2025-03-14T09:15:14.157Z",
+                        "LastModifiedDate": "2025-11-25T11:15:45.65Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-8176",
+                        "FixedVersion": "2.7.0-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-52426",
+                        "Status": "fixed",
+                        "InstalledVersion": "2.5.0-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            }
+                        },
+                        "PublishedDate": "2024-02-04T20:15:46.12Z",
+                        "LastModifiedDate": "2025-11-04T19:16:22.923Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-52426",
+                        "FixedVersion": "2.6.0-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-50602",
+                        "Status": "fixed",
+                        "InstalledVersion": "2.5.0-r1",
+                        "CVSS": {
+                            "bitnami": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "PublishedDate": "2024-10-27T05:15:04.09Z",
+                        "LastModifiedDate": "2025-10-15T17:54:22.117Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-50602",
+                        "FixedVersion": "2.6.4-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-5363",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2023-10-25T18:17:43.613Z",
+                        "LastModifiedDate": "2025-11-03T22:16:32.357Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-5363",
+                        "FixedVersion": "3.1.4-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-6119",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "PublishedDate": "2024-09-03T16:15:07.177Z",
+                        "LastModifiedDate": "2025-06-03T10:51:54.117Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-6119",
+                        "FixedVersion": "3.1.7-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-5678",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            }
+                        },
+                        "PublishedDate": "2023-11-06T16:15:42.67Z",
+                        "LastModifiedDate": "2025-11-03T22:16:32.67Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-5678",
+                        "FixedVersion": "3.1.4-r1"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-6129",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+                                "V3Score": 6.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+                                "V3Score": 6.5
+                            }
+                        },
+                        "PublishedDate": "2024-01-09T17:15:12.147Z",
+                        "LastModifiedDate": "2025-06-20T16:15:27.797Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-6129",
+                        "FixedVersion": "3.1.4-r3"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-6237",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "PublishedDate": "2024-04-25T07:15:45.27Z",
+                        "LastModifiedDate": "2024-11-21T08:43:25.997Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-6237",
+                        "FixedVersion": "3.1.4-r4"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-0727",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "ghsa": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            }
+                        },
+                        "PublishedDate": "2024-01-26T09:15:07.637Z",
+                        "LastModifiedDate": "2025-11-03T22:16:34.223Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-0727",
+                        "FixedVersion": "3.1.4-r5"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-13176",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 4.7
+                            }
+                        },
+                        "PublishedDate": "2025-01-20T14:15:26.247Z",
+                        "LastModifiedDate": "2025-11-03T20:16:08.203Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-13176",
+                        "FixedVersion": "3.1.8-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-4603",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            }
+                        },
+                        "PublishedDate": "2024-05-16T16:15:10.643Z",
+                        "LastModifiedDate": "2024-11-21T09:43:11.753Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-4603",
+                        "FixedVersion": "3.1.5-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-4741",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "V3Score": 5.6
+                            }
+                        },
+                        "PublishedDate": "2024-11-13T11:15:04.48Z",
+                        "LastModifiedDate": "2025-11-04T18:16:42.5Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-4741",
+                        "FixedVersion": "3.1.6-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-5535",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "PublishedDate": "2024-06-27T11:15:24.447Z",
+                        "LastModifiedDate": "2025-11-03T23:17:30.51Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-5535",
+                        "FixedVersion": "3.1.6-r0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-2511",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 3.7
+                            }
+                        },
+                        "PublishedDate": "2024-04-08T14:15:07.66Z",
+                        "LastModifiedDate": "2025-11-03T22:16:50.9Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-2511",
+                        "FixedVersion": "3.1.4-r6"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-9143",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.1.2-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 3.7
+                            }
+                        },
+                        "PublishedDate": "2024-10-16T17:15:18.13Z",
+                        "LastModifiedDate": "2025-11-03T23:17:33.46Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-9143",
+                        "FixedVersion": "3.1.7-r1"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2025-26519",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.2.4-r1",
+                        "CVSS": {},
+                        "PublishedDate": "2025-02-14T04:15:09.05Z",
+                        "LastModifiedDate": "2025-02-14T17:15:23.09Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2025-26519",
+                        "FixedVersion": "1.2.4-r3"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2025-26519",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.2.4-r1",
+                        "CVSS": {},
+                        "PublishedDate": "2025-02-14T04:15:09.05Z",
+                        "LastModifiedDate": "2025-02-14T17:15:23.09Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2025-26519",
+                        "FixedVersion": "1.2.4-r3"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-7104",
+                        "Status": "fixed",
+                        "InstalledVersion": "3.41.2-r2",
+                        "CVSS": {
+                            "bitnami": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "V3Score": 7.3
+                            },
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "V3Score": 7.3
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "V3Score": 7.3
+                            }
+                        },
+                        "PublishedDate": "2023-12-29T10:15:13.89Z",
+                        "LastModifiedDate": "2025-11-03T22:16:33.307Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-7104",
+                        "FixedVersion": "3.41.2-r3"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42363",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T22:15:07.94Z",
+                        "LastModifiedDate": "2024-11-21T08:22:28.403Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42363",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42364",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.313Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.17Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42364",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42365",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.373Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.393Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42365",
+                        "FixedVersion": "1.36.1-r7"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42366",
+                        "Status": "fixed",
+                        "InstalledVersion": "1.36.1-r2",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+                                "V3Score": 7.1
+                            }
+                        },
+                        "PublishedDate": "2023-11-27T23:15:07.42Z",
+                        "LastModifiedDate": "2024-12-06T14:15:19.53Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-42366",
+                        "FixedVersion": "1.36.1-r6"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2025-31115",
+                        "Status": "fixed",
+                        "InstalledVersion": "5.4.3-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "PublishedDate": "2025-04-03T17:15:30.54Z",
+                        "LastModifiedDate": "2025-04-07T14:18:34.453Z",
+                        "DataSource": {
+                            "ID": "alpine",
+                            "Name": "Alpine Secdb",
+                            "URL": "https://secdb.alpinelinux.org/"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2025-31115",
+                        "FixedVersion": "5.4.3-r1"
+                    }
+                ]
+            },
+            {
+                "Target": "Python",
+                "Type": "python-pkg",
+                "Vulnerabilities": [
+                    {
+                        "VulnerabilityID": "CVE-2023-5752",
+                        "Status": "fixed",
+                        "InstalledVersion": "23.1.2",
+                        "CVSS": {
+                            "bitnami": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+                                "V3Score": 3.3
+                            },
+                            "ghsa": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+                                "V3Score": 5.5
+                            },
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+                                "V3Score": 3.3
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+                                "V3Score": 3.3
+                            }
+                        },
+                        "PublishedDate": "2023-10-25T18:17:44.867Z",
+                        "LastModifiedDate": "2025-11-03T18:15:41.173Z",
+                        "DataSource": {
+                            "ID": "ghsa",
+                            "Name": "GitHub Security Advisory pip",
+                            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2023-5752",
+                        "FixedVersion": "23.3"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2025-8869",
+                        "Status": "fixed",
+                        "InstalledVersion": "23.1.2",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+                                "V3Score": 5.3
+                            }
+                        },
+                        "PublishedDate": "2025-09-24T15:15:41.293Z",
+                        "LastModifiedDate": "2025-11-03T18:17:02.783Z",
+                        "DataSource": {
+                            "ID": "ghsa",
+                            "Name": "GitHub Security Advisory pip",
+                            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2025-8869",
+                        "FixedVersion": "25.3"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-6345",
+                        "Status": "fixed",
+                        "InstalledVersion": "65.5.1",
+                        "CVSS": {
+                            "bitnami": {
+                                "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 8.8
+                            },
+                            "ghsa": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 8.8
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 8.8
+                            }
+                        },
+                        "PublishedDate": "2024-07-15T01:15:01.73Z",
+                        "LastModifiedDate": "2025-11-04T17:16:16.143Z",
+                        "DataSource": {
+                            "ID": "ghsa",
+                            "Name": "GitHub Security Advisory pip",
+                            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2024-6345",
+                        "FixedVersion": "70.0.0"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2025-47273",
+                        "Status": "fixed",
+                        "InstalledVersion": "65.5.1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "V3Score": 8.8
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L",
+                                "V3Score": 7.1
+                            }
+                        },
+                        "PublishedDate": "2025-05-17T16:15:19.11Z",
+                        "LastModifiedDate": "2025-06-12T16:29:01.66Z",
+                        "DataSource": {
+                            "ID": "ghsa",
+                            "Name": "GitHub Security Advisory pip",
+                            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
+                        },
+                        "NVDUrl": "https://avd.aquasec.com/nvd/cve-2025-47273",
+                        "FixedVersion": "78.1.1"
+                    }
+                ]
+            }
+        ]
+    }
+}

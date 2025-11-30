@@ -1,21 +1,19 @@
-import subprocess
+from .base_handler import BaseHandler
 
 
-class BanditHandler:
-    def __init__(self, path: str = ""):
-        self.path = path
+class BanditHandler(BaseHandler):
 
-    def scan_repo(self, output_path: str = "bandit_output.json"):
-        cmd = [
-            "bandit",
-            "-r",
-            ".",
-            "-x",
-            "./.venv",
-            "--format",
-            "json",
-            "--output",
-            output_path,
-        ]
-        subprocess.run(cmd, capture_output=True, text=True)
-        print(f"Wynik zapisany do pliku: {output_path}")
+    def scan_repo(self) -> dict:
+        cmd = ["bandit", "-r", str(self.proj_path), "-f", "json"]
+
+        code, out, err = self.run_cmd(cmd)
+
+        return {
+            "tool": "bandit",
+            "type": "repo",
+            "path": str(self.proj_path),
+            "success": code == 0,
+            "output_raw": out,
+            "errors": err,
+            "results": self.parse_json(out),
+        }
