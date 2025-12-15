@@ -1,0 +1,25 @@
+# Wyliczanie bezpieczeństwa ze wzoru
+100 -
+    TRIVY 0.4 (ANALIZA ŚRODOWISKA WYKONAWCZEGO):
+        dodać attack vector multiplier ??? 10 * CVSS * (Ekspozycja portu (0.2/1) + 
+        Czy używane jest reverse proxy (0/-0.3) +
+        Network restrictions (1 host/ 0.4 default_bridge/ -0.2 custom_bridge) +
+        Czy endpoint jest publiczny ale wymaga auth(0/0.2))
+
+    BANDIT 0.3 (SCA):
+        100 * (Severity (HIGH 1.5/MEDIUM 1.0/ LOW 0.6) *
+        Confidence (HIGH 1.2/ MEDIUM 1.0/ LOW 0.8)*
+        Typ podatności (ex. command injection/eval/exec 1.5/ Hardcoded secrets 2/
+        Logging of secrets 2...) 
+        ) 
+
+    TRIVY 0.3 (DEPENDENCY CHECK):
+        10 * CVSS (Mała waga bo uzytkownik bedzie mieć cały czas wgląd w vulnerabilities
+        dependencji w dashboardzi, więc jak zdeployuje taka biblioteke to niech nie ma pretensji)
+
+
+# Dependency check ->> trivy filesystem scan
+ dc potrzebuje pobrac całą bazę NVD + srednio działa z pythonem
+
+# FastAPI setup - przycisk na frontendzie wywołuje skan i aktualizuje dashboard
+

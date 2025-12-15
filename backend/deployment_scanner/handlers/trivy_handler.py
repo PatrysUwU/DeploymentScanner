@@ -11,7 +11,6 @@ class TrivyHandler(BaseHandler):
 
         code, out, err = self.run_cmd(cmd)
         out = self._filter_data(self.parse_json(out))
-        logging.debug(out)
         return {
             "tool": "trivy",
             "type": "image",
@@ -20,20 +19,6 @@ class TrivyHandler(BaseHandler):
             "output_raw": out,
             "errors": err,
             "results": out,
-        }
-
-    def scan_filesystem(self) -> dict:
-        cmd = ["trivy", "fs", "--format", "json", str(self.proj_path)]
-
-        code, out, err = self.run_cmd(cmd)
-        return {
-            "tool": "trivy",
-            "type": "filesystem",
-            "path": str(self.proj_path),
-            "success": code == 0,
-            "output_raw": out,
-            "errors": err,
-            "results": self.parse_json(out),
         }
 
     def _filter_data(self, data):
@@ -58,9 +43,5 @@ class TrivyHandler(BaseHandler):
                 if vuln.get("Status") == "fixed":
                     temp_vul["FixedVersion"] = vuln.get("FixedVersion", "")
                 temp["Vulnerabilities"].append(temp_vul)
-                logging.debug(
-                    f"Adding vulnerability: {temp_vul['VulnerabilityID']}"
-                )
-
             result.append(temp)
         return result
