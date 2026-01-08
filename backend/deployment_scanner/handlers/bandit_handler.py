@@ -1,11 +1,11 @@
-from .base_handler import BaseHandler
 import logging
+
+from .base_handler import BaseHandler
 
 logging.basicConfig(level="DEBUG")
 
 
 class BanditHandler(BaseHandler):
-
     def scan_repo(self):
         cmd = [
             "bandit",
@@ -25,9 +25,7 @@ class BanditHandler(BaseHandler):
 
         return {
             "tool": "bandit",
-            "type": "static",
-            "path": str(self.proj_path),
-            "success": code == 0,
+            "type": "SAST",
             "errors": err,
             "results": filtered,
         }
@@ -53,10 +51,6 @@ class BanditHandler(BaseHandler):
                 "Description": issue.get("issue_text"),
                 "File": issue.get("filename"),
                 "Line": issue.get("line_number"),
-                "CVSS": {},
-                "DataSource": "Bandit",
-                "PublishedDate": "",
-                "LastModifiedDate": "",
             }
             vulns.append(vuln)
 

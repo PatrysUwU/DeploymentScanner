@@ -1,0 +1,1486 @@
+{
+    "trivy_image": {
+        "tool": "trivy",
+        "type": "IMAGE_SCAN",
+        "results": [
+            {
+                "Target": "python:3.11.4-alpine",
+                "Type": "image",
+                "Vulnerabilities": [
+                    {
+                        "VulnerabilityID": "CVE-2023-42363",
+                        "Severity": "MEDIUM",
+                        "Title": "busybox: use-after-free in awk",
+                        "Description": "A use-after-free vulnerability was discovered in xasprintf function in xfuncs_printf.c:344 in BusyBox v.1.36.1.",
+                        "Package": "busybox",
+                        "InstalledVersion": "1.36.1-r2",
+                        "FixedVersion": "1.36.1-r7",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-11-27T22:15:07.94Z",
+                        "LastModifiedDate": "2024-11-21T08:22:28.403Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42364",
+                        "Severity": "MEDIUM",
+                        "Title": "busybox: use-after-free",
+                        "Description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.",
+                        "Package": "busybox",
+                        "InstalledVersion": "1.36.1-r2",
+                        "FixedVersion": "1.36.1-r7",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-11-27T23:15:07.313Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.17Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42365",
+                        "Severity": "MEDIUM",
+                        "Title": "busybox: use-after-free",
+                        "Description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.",
+                        "Package": "busybox",
+                        "InstalledVersion": "1.36.1-r2",
+                        "FixedVersion": "1.36.1-r7",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-11-27T23:15:07.373Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.393Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42366",
+                        "Severity": "MEDIUM",
+                        "Title": "busybox: A heap-buffer-overflow",
+                        "Description": "A heap-buffer-overflow was discovered in BusyBox v.1.36.1 in the next_token function at awk.c:1159.",
+                        "Package": "busybox",
+                        "InstalledVersion": "1.36.1-r2",
+                        "FixedVersion": "1.36.1-r6",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+                                "V3Score": 7.1
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-11-27T23:15:07.42Z",
+                        "LastModifiedDate": "2024-12-06T14:15:19.53Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42363",
+                        "Severity": "MEDIUM",
+                        "Title": "busybox: use-after-free in awk",
+                        "Description": "A use-after-free vulnerability was discovered in xasprintf function in xfuncs_printf.c:344 in BusyBox v.1.36.1.",
+                        "Package": "busybox-binsh",
+                        "InstalledVersion": "1.36.1-r2",
+                        "FixedVersion": "1.36.1-r7",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-11-27T22:15:07.94Z",
+                        "LastModifiedDate": "2024-11-21T08:22:28.403Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42364",
+                        "Severity": "MEDIUM",
+                        "Title": "busybox: use-after-free",
+                        "Description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.",
+                        "Package": "busybox-binsh",
+                        "InstalledVersion": "1.36.1-r2",
+                        "FixedVersion": "1.36.1-r7",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-11-27T23:15:07.313Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.17Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42365",
+                        "Severity": "MEDIUM",
+                        "Title": "busybox: use-after-free",
+                        "Description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.",
+                        "Package": "busybox-binsh",
+                        "InstalledVersion": "1.36.1-r2",
+                        "FixedVersion": "1.36.1-r7",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-11-27T23:15:07.373Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.393Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42366",
+                        "Severity": "MEDIUM",
+                        "Title": "busybox: A heap-buffer-overflow",
+                        "Description": "A heap-buffer-overflow was discovered in BusyBox v.1.36.1 in the next_token function at awk.c:1159.",
+                        "Package": "busybox-binsh",
+                        "InstalledVersion": "1.36.1-r2",
+                        "FixedVersion": "1.36.1-r6",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+                                "V3Score": 7.1
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-11-27T23:15:07.42Z",
+                        "LastModifiedDate": "2024-12-06T14:15:19.53Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-37371",
+                        "Severity": "CRITICAL",
+                        "Title": "krb5: GSS message token handling",
+                        "Description": "In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can cause invalid memory reads during GSS message token handling by sending message tokens with invalid length fields.",
+                        "Package": "krb5-libs",
+                        "InstalledVersion": "1.20.1-r1",
+                        "FixedVersion": "1.20.2-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+                                "V3Score": 9.1
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 6.5
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-06-28T23:15:11.603Z",
+                        "LastModifiedDate": "2025-11-03T21:16:13.997Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-37370",
+                        "Severity": "HIGH",
+                        "Title": "krb5: GSS message token handling",
+                        "Description": "In MIT Kerberos 5 (aka krb5) before 1.21.3, an attacker can modify the plaintext Extra Count field of a confidential GSS krb5 wrap token, causing the unwrapped token to appear truncated to the application.",
+                        "Package": "krb5-libs",
+                        "InstalledVersion": "1.20.1-r1",
+                        "FixedVersion": "1.20.2-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-06-28T22:15:02.293Z",
+                        "LastModifiedDate": "2025-03-13T19:15:45.213Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-36054",
+                        "Severity": "MEDIUM",
+                        "Title": "krb5: Denial of service through freeing uninitialized pointer",
+                        "Description": "lib/kadm5/kadm_rpc_xdr.c in MIT Kerberos 5 (aka krb5) before 1.20.2 and 1.21.x before 1.21.1 frees an uninitialized pointer. A remote authenticated user can trigger a kadmind crash. This occurs because _xdr_kadm5_principal_ent_rec does not validate the relationship between n_key_data and the key_data array count.",
+                        "Package": "krb5-libs",
+                        "InstalledVersion": "1.20.1-r1",
+                        "FixedVersion": "1.20.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 6.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 6.5
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-08-07T19:15:09.84Z",
+                        "LastModifiedDate": "2024-11-21T08:09:15.227Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-5363",
+                        "Severity": "HIGH",
+                        "Title": "openssl: Incorrect cipher key and IV length processing",
+                        "Description": "Issue summary: A bug has been identified in the processing of key and\ninitialisation vector (IV) lengths.  This can lead to potential truncation\nor overruns during the initialisation of some symmetric ciphers.\n\nImpact summary: A truncation in the IV can result in non-uniqueness,\nwhich could result in loss of confidentiality for some cipher modes.\n\nWhen calling EVP_EncryptInit_ex2(), EVP_DecryptInit_ex2() or\nEVP_CipherInit_ex2() the provided OSSL_PARAM array is processed after\nthe key and IV have been established.  Any alterations to the key length,\nvia the \"keylen\" parameter or the IV length, via the \"ivlen\" parameter,\nwithin the OSSL_PARAM array will not take effect as intended, potentially\ncausing truncation or overreading of these values.  The following ciphers\nand cipher modes are impacted: RC2, RC4, RC5, CCM, GCM and OCB.\n\nFor the CCM, GCM and OCB cipher modes, truncation of the IV can result in\nloss of confidentiality.  For example, when following NIST's SP 800-38D\nsection 8.2.1 guidance for constructing a deterministic IV for AES in\nGCM mode, truncation of the counter portion could lead to IV reuse.\n\nBoth truncations and overruns of the key and overruns of the IV will\nproduce incorrect results and could, in some cases, trigger a memory\nexception.  However, these issues are not currently assessed as security\ncritical.\n\nChanging the key and/or IV lengths is not considered to be a common operation\nand the vulnerable API was recently introduced. Furthermore it is likely that\napplication developers will have spotted this problem during testing since\ndecryption would fail unless both peers in the communication were similarly\nvulnerable. For these reasons we expect the probability of an application being\nvulnerable to this to be quite low. However if an application is vulnerable then\nthis issue is considered very serious. For these reasons we have assessed this\nissue as Moderate severity overall.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this because\nthe issue lies outside of the FIPS provider boundary.\n\nOpenSSL 3.1 and 3.0 are vulnerable to this issue.",
+                        "Package": "libcrypto3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.4-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-10-25T18:17:43.613Z",
+                        "LastModifiedDate": "2025-12-02T20:15:48.537Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-6119",
+                        "Severity": "HIGH",
+                        "Title": "openssl: Possible denial of service in X.509 name checks",
+                        "Description": "Issue summary: Applications performing certificate name checks (e.g., TLS\nclients checking server certificates) may attempt to read an invalid memory\naddress resulting in abnormal termination of the application process.\n\nImpact summary: Abnormal termination of an application can a cause a denial of\nservice.\n\nApplications performing certificate name checks (e.g., TLS clients checking\nserver certificates) may attempt to read an invalid memory address when\ncomparing the expected name with an `otherName` subject alternative name of an\nX.509 certificate. This may result in an exception that terminates the\napplication program.\n\nNote that basic certificate chain validation (signatures, dates, ...) is not\naffected, the denial of service can occur only when the application also\nspecifies an expected DNS name, Email address or IP address.\n\nTLS servers rarely solicit client certificates, and even when they do, they\ngenerally don't perform a name check against a reference identifier (expected\nidentity), but rather extract the presented identity after checking the\ncertificate chain.  So TLS servers are generally not affected and the severity\nof the issue is Moderate.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+                        "Package": "libcrypto3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.7-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-09-03T16:15:07.177Z",
+                        "LastModifiedDate": "2025-06-03T10:51:54.117Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-5678",
+                        "Severity": "MEDIUM",
+                        "Title": "openssl: Generating excessively long X9.42 DH keys or checking excessively long X9.42 DH keys or parameters may be very slow",
+                        "Description": "Issue summary: Generating excessively long X9.42 DH keys or checking\nexcessively long X9.42 DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_generate_key() to\ngenerate an X9.42 DH key may experience long delays.  Likewise, applications\nthat use DH_check_pub_key(), DH_check_pub_key_ex() or EVP_PKEY_public_check()\nto check an X9.42 DH key or X9.42 DH parameters may experience long delays.\nWhere the key or parameters that are being checked have been obtained from\nan untrusted source this may lead to a Denial of Service.\n\nWhile DH_check() performs all the necessary checks (as of CVE-2023-3817),\nDH_check_pub_key() doesn't make any of these checks, and is therefore\nvulnerable for excessively large P and Q parameters.\n\nLikewise, while DH_generate_key() performs a check for an excessively large\nP, it doesn't check for an excessively large Q.\n\nAn application that calls DH_generate_key() or DH_check_pub_key() and\nsupplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nDH_generate_key() and DH_check_pub_key() are also called by a number of\nother OpenSSL functions.  An application calling any of those other\nfunctions may similarly be affected.  The other functions affected by this\nare DH_check_pub_key_ex(), EVP_PKEY_public_check(), and EVP_PKEY_generate().\n\nAlso vulnerable are the OpenSSL pkey command line application when using the\n\"-pubcheck\" option, as well as the OpenSSL genpkey command line application.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.",
+                        "Package": "libcrypto3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.4-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-11-06T16:15:42.67Z",
+                        "LastModifiedDate": "2025-12-02T20:15:49.157Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-6129",
+                        "Severity": "MEDIUM",
+                        "Title": "openssl: POLY1305 MAC implementation corrupts vector registers on PowerPC",
+                        "Description": "Issue summary: The POLY1305 MAC (message authentication code) implementation\ncontains a bug that might corrupt the internal state of applications running\non PowerPC CPU based platforms if the CPU provides vector instructions.\n\nImpact summary: If an attacker can influence whether the POLY1305 MAC\nalgorithm is used, the application state might be corrupted with various\napplication dependent consequences.\n\nThe POLY1305 MAC (message authentication code) implementation in OpenSSL for\nPowerPC CPUs restores the contents of vector registers in a different order\nthan they are saved. Thus the contents of some of these vector registers\nare corrupted when returning to the caller. The vulnerable code is used only\non newer PowerPC processors supporting the PowerISA 2.07 instructions.\n\nThe consequences of this kind of internal application state corruption can\nbe various - from no consequences, if the calling application does not\ndepend on the contents of non-volatile XMM registers at all, to the worst\nconsequences, where the attacker could get complete control of the application\nprocess. However unless the compiler uses the vector registers for storing\npointers, the most likely consequence, if any, would be an incorrect result\nof some application dependent calculations or a crash leading to a denial of\nservice.\n\nThe POLY1305 MAC algorithm is most frequently used as part of the\nCHACHA20-POLY1305 AEAD (authenticated encryption with associated data)\nalgorithm. The most common usage of this AEAD cipher is with TLS protocol\nversions 1.2 and 1.3. If this cipher is enabled on the server a malicious\nclient can influence whether this AEAD cipher is used. This implies that\nTLS server applications using OpenSSL can be potentially impacted. However\nwe are currently not aware of any concrete application that would be affected\nby this issue therefore we consider this a Low severity security issue.",
+                        "Package": "libcrypto3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.4-r3",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+                                "V3Score": 6.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+                                "V3Score": 6.5
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-01-09T17:15:12.147Z",
+                        "LastModifiedDate": "2025-06-20T16:15:27.797Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-6237",
+                        "Severity": "MEDIUM",
+                        "Title": "openssl: Excessive time spent checking invalid RSA public keys",
+                        "Description": "Issue summary: Checking excessively long invalid RSA public keys may take\na long time.\n\nImpact summary: Applications that use the function EVP_PKEY_public_check()\nto check RSA public keys may experience long delays. Where the key that\nis being checked has been obtained from an untrusted source this may lead\nto a Denial of Service.\n\nWhen function EVP_PKEY_public_check() is called on RSA public keys,\na computation is done to confirm that the RSA modulus, n, is composite.\nFor valid RSA keys, n is a product of two or more large primes and this\ncomputation completes quickly. However, if n is an overly large prime,\nthen this computation would take a long time.\n\nAn application that calls EVP_PKEY_public_check() and supplies an RSA key\nobtained from an untrusted source could be vulnerable to a Denial of Service\nattack.\n\nThe function EVP_PKEY_public_check() is not called from other OpenSSL\nfunctions however it is called from the OpenSSL pkey command line\napplication. For that reason that application is also vulnerable if used\nwith the '-pubin' and '-check' options on untrusted data.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.",
+                        "Package": "libcrypto3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.4-r4",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-04-25T07:15:45.27Z",
+                        "LastModifiedDate": "2024-11-21T08:43:25.997Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-0727",
+                        "Severity": "MEDIUM",
+                        "Title": "openssl: denial of service via null dereference",
+                        "Description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+                        "Package": "libcrypto3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.4-r5",
+                        "CVSS": {
+                            "ghsa": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-01-26T09:15:07.637Z",
+                        "LastModifiedDate": "2025-11-03T22:16:34.223Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-13176",
+                        "Severity": "MEDIUM",
+                        "Title": "openssl: Timing side-channel in ECDSA signature computation",
+                        "Description": "Issue summary: A timing side-channel which could potentially allow recovering\nthe private key exists in the ECDSA signature computation.\n\nImpact summary: A timing side-channel in ECDSA signature computations\ncould allow recovering the private key by an attacker. However, measuring\nthe timing would require either local access to the signing application or\na very fast network connection with low latency.\n\nThere is a timing signal of around 300 nanoseconds when the top word of\nthe inverted ECDSA nonce value is zero. This can happen with significant\nprobability only for some of the supported elliptic curves. In particular\nthe NIST P-521 curve is affected. To be able to measure this leak, the attacker\nprocess must either be located in the same physical computer or must\nhave a very fast network connection with low latency. For that reason\nthe severity of this vulnerability is Low.\n\nThe FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are affected by this issue.",
+                        "Package": "libcrypto3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.8-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 4.7
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2025-01-20T14:15:26.247Z",
+                        "LastModifiedDate": "2025-11-03T20:16:08.203Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-4603",
+                        "Severity": "MEDIUM",
+                        "Title": "openssl: Excessive time spent checking DSA keys and parameters",
+                        "Description": "Issue summary: Checking excessively long DSA keys or parameters may be very\nslow.\n\nImpact summary: Applications that use the functions EVP_PKEY_param_check()\nor EVP_PKEY_public_check() to check a DSA public key or DSA parameters may\nexperience long delays. Where the key or parameters that are being checked\nhave been obtained from an untrusted source this may lead to a Denial of\nService.\n\nThe functions EVP_PKEY_param_check() or EVP_PKEY_public_check() perform\nvarious checks on DSA parameters. Some of those computations take a long time\nif the modulus (`p` parameter) is too large.\n\nTrying to use a very large modulus is slow and OpenSSL will not allow using\npublic keys with a modulus which is over 10,000 bits in length for signature\nverification. However the key and parameter check functions do not limit\nthe modulus size when performing the checks.\n\nAn application that calls EVP_PKEY_param_check() or EVP_PKEY_public_check()\nand supplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nThese functions are not called by OpenSSL itself on untrusted DSA keys so\nonly applications that directly call these functions may be vulnerable.\n\nAlso vulnerable are the OpenSSL pkey and pkeyparam command line applications\nwhen using the `-check` option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.",
+                        "Package": "libcrypto3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.5-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-05-16T16:15:10.643Z",
+                        "LastModifiedDate": "2024-11-21T09:43:11.753Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-4741",
+                        "Severity": "MEDIUM",
+                        "Title": "openssl: Use After Free with SSL_free_buffers",
+                        "Description": "Issue summary: Calling the OpenSSL API function SSL_free_buffers may cause\nmemory to be accessed that was previously freed in some situations\n\nImpact summary: A use after free can have a range of potential consequences such\nas the corruption of valid data, crashes or execution of arbitrary code.\nHowever, only applications that directly call the SSL_free_buffers function are\naffected by this issue. Applications that do not call this function are not\nvulnerable. Our investigations indicate that this function is rarely used by\napplications.\n\nThe SSL_free_buffers function is used to free the internal OpenSSL buffer used\nwhen processing an incoming record from the network. The call is only expected\nto succeed if the buffer is not currently in use. However, two scenarios have\nbeen identified where the buffer is freed even when still in use.\n\nThe first scenario occurs where a record header has been received from the\nnetwork and processed by OpenSSL, but the full record body has not yet arrived.\nIn this case calling SSL_free_buffers will succeed even though a record has only\nbeen partially processed and the buffer is still in use.\n\nThe second scenario occurs where a full record containing application data has\nbeen received and processed by OpenSSL but the application has only read part of\nthis data. Again a call to SSL_free_buffers will succeed even though the buffer\nis still in use.\n\nWhile these scenarios could occur accidentally during normal operation a\nmalicious attacker could attempt to engineer a stituation where this occurs.\nWe are not aware of this issue being actively exploited.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+                        "Package": "libcrypto3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.6-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "V3Score": 5.6
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-11-13T11:15:04.48Z",
+                        "LastModifiedDate": "2025-11-04T18:16:42.5Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-5535",
+                        "Severity": "MEDIUM",
+                        "Title": "openssl: SSL_select_next_proto buffer overread",
+                        "Description": "Issue summary: Calling the OpenSSL API function SSL_select_next_proto with an\nempty supported client protocols buffer may cause a crash or memory contents to\nbe sent to the peer.\n\nImpact summary: A buffer overread can have a range of potential consequences\nsuch as unexpected application beahviour or a crash. In particular this issue\ncould result in up to 255 bytes of arbitrary private data from memory being sent\nto the peer leading to a loss of confidentiality. However, only applications\nthat directly call the SSL_select_next_proto function with a 0 length list of\nsupported client protocols are affected by this issue. This would normally never\nbe a valid scenario and is typically not under attacker control but may occur by\naccident in the case of a configuration or programming error in the calling\napplication.\n\nThe OpenSSL API function SSL_select_next_proto is typically used by TLS\napplications that support ALPN (Application Layer Protocol Negotiation) or NPN\n(Next Protocol Negotiation). NPN is older, was never standardised and\nis deprecated in favour of ALPN. We believe that ALPN is significantly more\nwidely deployed than NPN. The SSL_select_next_proto function accepts a list of\nprotocols from the server and a list of protocols from the client and returns\nthe first protocol that appears in the server list that also appears in the\nclient list. In the case of no overlap between the two lists it returns the\nfirst item in the client list. In either case it will signal whether an overlap\nbetween the two lists was found. In the case where SSL_select_next_proto is\ncalled with a zero length client list it fails to notice this condition and\nreturns the memory immediately following the client list pointer (and reports\nthat there was no overlap in the lists).\n\nThis function is typically called from a server side application callback for\nALPN or a client side application callback for NPN. In the case of ALPN the list\nof protocols supplied by the client is guaranteed by libssl to never be zero in\nlength. The list of server protocols comes from the application and should never\nnormally be expected to be of zero length. In this case if the\nSSL_select_next_proto function has been called as expected (with the list\nsupplied by the client passed in the client/client_len parameters), then the\napplication will not be vulnerable to this issue. If the application has\naccidentally been configured with a zero length server list, and has\naccidentally passed that zero length server list in the client/client_len\nparameters, and has additionally failed to correctly handle a \"no overlap\"\nresponse (which would normally result in a handshake failure in ALPN) then it\nwill be vulnerable to this problem.\n\nIn the case of NPN, the protocol permits the client to opportunistically select\na protocol when there is no overlap. OpenSSL returns the first client protocol\nin the no overlap case in support of this. The list of client protocols comes\nfrom the application and should never normally be expected to be of zero length.\nHowever if the SSL_select_next_proto function is accidentally called with a\nclient_len of 0 then an invalid memory pointer will be returned instead. If the\napplication uses this output as the opportunistic protocol then the loss of\nconfidentiality will occur.\n\nThis issue has been assessed as Low severity because applications are most\nlikely to be vulnerable if they are using NPN instead of ALPN - but NPN is not\nwidely used. It also requires an application configuration or programming error.\nFinally, this issue would not typically be under attacker control making active\nexploitation unlikely.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.\n\nDue to the low severity of this issue we are not issuing new releases of\nOpenSSL at this time. The fix will be included in the next releases when they\nbecome available.",
+                        "Package": "libcrypto3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.6-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-06-27T11:15:24.447Z",
+                        "LastModifiedDate": "2025-11-03T23:17:30.51Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-2511",
+                        "Severity": "LOW",
+                        "Title": "openssl: Unbounded memory growth with session handling in TLSv1.3",
+                        "Description": "Issue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.",
+                        "Package": "libcrypto3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.4-r6",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 3.7
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-04-08T14:15:07.66Z",
+                        "LastModifiedDate": "2025-11-03T22:16:50.9Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-9143",
+                        "Severity": "LOW",
+                        "Title": "openssl: Low-level invalid GF(2^m) parameters lead to OOB memory access",
+                        "Description": "Issue summary: Use of the low-level GF(2^m) elliptic curve APIs with untrusted\nexplicit values for the field polynomial can lead to out-of-bounds memory reads\nor writes.\n\nImpact summary: Out of bound memory writes can lead to an application crash or\neven a possibility of a remote code execution, however, in all the protocols\ninvolving Elliptic Curve Cryptography that we're aware of, either only \"named\ncurves\" are supported, or, if explicit curve parameters are supported, they\nspecify an X9.62 encoding of binary (GF(2^m)) curves that can't represent\nproblematic input values. Thus the likelihood of existence of a vulnerable\napplication is low.\n\nIn particular, the X9.62 encoding is used for ECC keys in X.509 certificates,\nso problematic inputs cannot occur in the context of processing X.509\ncertificates.  Any problematic use-cases would have to be using an \"exotic\"\ncurve encoding.\n\nThe affected APIs include: EC_GROUP_new_curve_GF2m(), EC_GROUP_new_from_params(),\nand various supporting BN_GF2m_*() functions.\n\nApplications working with \"exotic\" explicit binary (GF(2^m)) curve parameters,\nthat make it possible to represent invalid field polynomials with a zero\nconstant term, via the above or similar APIs, may terminate abruptly as a\nresult of reading or writing outside of array bounds.  Remote code execution\ncannot easily be ruled out.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+                        "Package": "libcrypto3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.7-r1",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 3.7
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-10-16T17:15:18.13Z",
+                        "LastModifiedDate": "2025-11-03T23:17:33.46Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-45491",
+                        "Severity": "CRITICAL",
+                        "Title": "libexpat: Integer Overflow or Wraparound",
+                        "Description": "An issue was discovered in libexpat before 2.6.3. dtdCopy in xmlparse.c can have an integer overflow for nDefaultAtts on 32-bit platforms (where UINT_MAX equals SIZE_MAX).",
+                        "Package": "libexpat",
+                        "InstalledVersion": "2.5.0-r1",
+                        "FixedVersion": "2.6.3-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "V3Score": 9.8
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-08-30T03:15:03.85Z",
+                        "LastModifiedDate": "2025-11-04T17:16:15.26Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-45492",
+                        "Severity": "CRITICAL",
+                        "Title": "libexpat: integer overflow",
+                        "Description": "An issue was discovered in libexpat before 2.6.3. nextScaffoldPart in xmlparse.c can have an integer overflow for m_groupSize on 32-bit platforms (where UINT_MAX equals SIZE_MAX).",
+                        "Package": "libexpat",
+                        "InstalledVersion": "2.5.0-r1",
+                        "FixedVersion": "2.6.3-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "V3Score": 9.8
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 6.2
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-08-30T03:15:03.93Z",
+                        "LastModifiedDate": "2025-11-04T17:16:15.43Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-52425",
+                        "Severity": "HIGH",
+                        "Title": "expat: parsing large tokens can trigger a denial of service",
+                        "Description": "libexpat through 2.5.0 allows a denial of service (resource consumption) because many full reparsings are required in the case of a large token for which multiple buffer fills are needed.",
+                        "Package": "libexpat",
+                        "InstalledVersion": "2.5.0-r1",
+                        "FixedVersion": "2.6.0-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-02-04T20:15:46.063Z",
+                        "LastModifiedDate": "2025-11-04T19:16:22.74Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-28757",
+                        "Severity": "HIGH",
+                        "Title": "expat: XML Entity Expansion",
+                        "Description": "libexpat through 2.6.1 allows an XML Entity Expansion attack when there is isolated use of external parsers (created via XML_ExternalEntityParserCreate).",
+                        "Package": "libexpat",
+                        "InstalledVersion": "2.5.0-r1",
+                        "FixedVersion": "2.6.2-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-03-10T05:15:06.57Z",
+                        "LastModifiedDate": "2025-11-04T22:15:59.8Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-45490",
+                        "Severity": "HIGH",
+                        "Title": "libexpat: Negative Length Parsing Vulnerability in libexpat",
+                        "Description": "An issue was discovered in libexpat before 2.6.3. xmlparse.c does not reject a negative length for XML_ParseBuffer.",
+                        "Package": "libexpat",
+                        "InstalledVersion": "2.5.0-r1",
+                        "FixedVersion": "2.6.3-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-08-30T03:15:03.757Z",
+                        "LastModifiedDate": "2025-11-04T17:16:15.06Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-8176",
+                        "Severity": "HIGH",
+                        "Title": "libexpat: expat: Improper Restriction of XML Entity Expansion Depth in libexpat",
+                        "Description": "A stack overflow vulnerability exists in the libexpat library due to the way it handles recursive entity expansion in XML documents. When parsing an XML document with deeply nested entity references, libexpat can be forced to recurse indefinitely, exhausting the stack space and causing a crash. This issue could lead to denial of service (DoS) or, in some cases, exploitable memory corruption, depending on the environment and library usage.",
+                        "Package": "libexpat",
+                        "InstalledVersion": "2.5.0-r1",
+                        "FixedVersion": "2.7.0-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2025-03-14T09:15:14.157Z",
+                        "LastModifiedDate": "2025-12-09T16:17:29.94Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-52426",
+                        "Severity": "MEDIUM",
+                        "Title": "expat: recursive XML entity expansion vulnerability",
+                        "Description": "libexpat through 2.5.0 allows recursive XML Entity Expansion if XML_DTD is undefined at compile time.",
+                        "Package": "libexpat",
+                        "InstalledVersion": "2.5.0-r1",
+                        "FixedVersion": "2.6.0-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-02-04T20:15:46.12Z",
+                        "LastModifiedDate": "2025-11-04T19:16:22.923Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-50602",
+                        "Severity": "MEDIUM",
+                        "Title": "libexpat: expat: DoS via XML_ResumeParser",
+                        "Description": "An issue was discovered in libexpat before 2.6.4. There is a crash within the XML_ResumeParser function because XML_StopParser can stop/suspend an unstarted parser.",
+                        "Package": "libexpat",
+                        "InstalledVersion": "2.5.0-r1",
+                        "FixedVersion": "2.6.4-r0",
+                        "CVSS": {
+                            "bitnami": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-10-27T05:15:04.09Z",
+                        "LastModifiedDate": "2025-10-15T17:54:22.117Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-5363",
+                        "Severity": "HIGH",
+                        "Title": "openssl: Incorrect cipher key and IV length processing",
+                        "Description": "Issue summary: A bug has been identified in the processing of key and\ninitialisation vector (IV) lengths.  This can lead to potential truncation\nor overruns during the initialisation of some symmetric ciphers.\n\nImpact summary: A truncation in the IV can result in non-uniqueness,\nwhich could result in loss of confidentiality for some cipher modes.\n\nWhen calling EVP_EncryptInit_ex2(), EVP_DecryptInit_ex2() or\nEVP_CipherInit_ex2() the provided OSSL_PARAM array is processed after\nthe key and IV have been established.  Any alterations to the key length,\nvia the \"keylen\" parameter or the IV length, via the \"ivlen\" parameter,\nwithin the OSSL_PARAM array will not take effect as intended, potentially\ncausing truncation or overreading of these values.  The following ciphers\nand cipher modes are impacted: RC2, RC4, RC5, CCM, GCM and OCB.\n\nFor the CCM, GCM and OCB cipher modes, truncation of the IV can result in\nloss of confidentiality.  For example, when following NIST's SP 800-38D\nsection 8.2.1 guidance for constructing a deterministic IV for AES in\nGCM mode, truncation of the counter portion could lead to IV reuse.\n\nBoth truncations and overruns of the key and overruns of the IV will\nproduce incorrect results and could, in some cases, trigger a memory\nexception.  However, these issues are not currently assessed as security\ncritical.\n\nChanging the key and/or IV lengths is not considered to be a common operation\nand the vulnerable API was recently introduced. Furthermore it is likely that\napplication developers will have spotted this problem during testing since\ndecryption would fail unless both peers in the communication were similarly\nvulnerable. For these reasons we expect the probability of an application being\nvulnerable to this to be quite low. However if an application is vulnerable then\nthis issue is considered very serious. For these reasons we have assessed this\nissue as Moderate severity overall.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this because\nthe issue lies outside of the FIPS provider boundary.\n\nOpenSSL 3.1 and 3.0 are vulnerable to this issue.",
+                        "Package": "libssl3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.4-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-10-25T18:17:43.613Z",
+                        "LastModifiedDate": "2025-12-02T20:15:48.537Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-6119",
+                        "Severity": "HIGH",
+                        "Title": "openssl: Possible denial of service in X.509 name checks",
+                        "Description": "Issue summary: Applications performing certificate name checks (e.g., TLS\nclients checking server certificates) may attempt to read an invalid memory\naddress resulting in abnormal termination of the application process.\n\nImpact summary: Abnormal termination of an application can a cause a denial of\nservice.\n\nApplications performing certificate name checks (e.g., TLS clients checking\nserver certificates) may attempt to read an invalid memory address when\ncomparing the expected name with an `otherName` subject alternative name of an\nX.509 certificate. This may result in an exception that terminates the\napplication program.\n\nNote that basic certificate chain validation (signatures, dates, ...) is not\naffected, the denial of service can occur only when the application also\nspecifies an expected DNS name, Email address or IP address.\n\nTLS servers rarely solicit client certificates, and even when they do, they\ngenerally don't perform a name check against a reference identifier (expected\nidentity), but rather extract the presented identity after checking the\ncertificate chain.  So TLS servers are generally not affected and the severity\nof the issue is Moderate.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+                        "Package": "libssl3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.7-r0",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-09-03T16:15:07.177Z",
+                        "LastModifiedDate": "2025-06-03T10:51:54.117Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-5678",
+                        "Severity": "MEDIUM",
+                        "Title": "openssl: Generating excessively long X9.42 DH keys or checking excessively long X9.42 DH keys or parameters may be very slow",
+                        "Description": "Issue summary: Generating excessively long X9.42 DH keys or checking\nexcessively long X9.42 DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_generate_key() to\ngenerate an X9.42 DH key may experience long delays.  Likewise, applications\nthat use DH_check_pub_key(), DH_check_pub_key_ex() or EVP_PKEY_public_check()\nto check an X9.42 DH key or X9.42 DH parameters may experience long delays.\nWhere the key or parameters that are being checked have been obtained from\nan untrusted source this may lead to a Denial of Service.\n\nWhile DH_check() performs all the necessary checks (as of CVE-2023-3817),\nDH_check_pub_key() doesn't make any of these checks, and is therefore\nvulnerable for excessively large P and Q parameters.\n\nLikewise, while DH_generate_key() performs a check for an excessively large\nP, it doesn't check for an excessively large Q.\n\nAn application that calls DH_generate_key() or DH_check_pub_key() and\nsupplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nDH_generate_key() and DH_check_pub_key() are also called by a number of\nother OpenSSL functions.  An application calling any of those other\nfunctions may similarly be affected.  The other functions affected by this\nare DH_check_pub_key_ex(), EVP_PKEY_public_check(), and EVP_PKEY_generate().\n\nAlso vulnerable are the OpenSSL pkey command line application when using the\n\"-pubcheck\" option, as well as the OpenSSL genpkey command line application.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.",
+                        "Package": "libssl3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.4-r1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-11-06T16:15:42.67Z",
+                        "LastModifiedDate": "2025-12-02T20:15:49.157Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-6129",
+                        "Severity": "MEDIUM",
+                        "Title": "openssl: POLY1305 MAC implementation corrupts vector registers on PowerPC",
+                        "Description": "Issue summary: The POLY1305 MAC (message authentication code) implementation\ncontains a bug that might corrupt the internal state of applications running\non PowerPC CPU based platforms if the CPU provides vector instructions.\n\nImpact summary: If an attacker can influence whether the POLY1305 MAC\nalgorithm is used, the application state might be corrupted with various\napplication dependent consequences.\n\nThe POLY1305 MAC (message authentication code) implementation in OpenSSL for\nPowerPC CPUs restores the contents of vector registers in a different order\nthan they are saved. Thus the contents of some of these vector registers\nare corrupted when returning to the caller. The vulnerable code is used only\non newer PowerPC processors supporting the PowerISA 2.07 instructions.\n\nThe consequences of this kind of internal application state corruption can\nbe various - from no consequences, if the calling application does not\ndepend on the contents of non-volatile XMM registers at all, to the worst\nconsequences, where the attacker could get complete control of the application\nprocess. However unless the compiler uses the vector registers for storing\npointers, the most likely consequence, if any, would be an incorrect result\nof some application dependent calculations or a crash leading to a denial of\nservice.\n\nThe POLY1305 MAC algorithm is most frequently used as part of the\nCHACHA20-POLY1305 AEAD (authenticated encryption with associated data)\nalgorithm. The most common usage of this AEAD cipher is with TLS protocol\nversions 1.2 and 1.3. If this cipher is enabled on the server a malicious\nclient can influence whether this AEAD cipher is used. This implies that\nTLS server applications using OpenSSL can be potentially impacted. However\nwe are currently not aware of any concrete application that would be affected\nby this issue therefore we consider this a Low severity security issue.",
+                        "Package": "libssl3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.4-r3",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+                                "V3Score": 6.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+                                "V3Score": 6.5
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-01-09T17:15:12.147Z",
+                        "LastModifiedDate": "2025-06-20T16:15:27.797Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-6237",
+                        "Severity": "MEDIUM",
+                        "Title": "openssl: Excessive time spent checking invalid RSA public keys",
+                        "Description": "Issue summary: Checking excessively long invalid RSA public keys may take\na long time.\n\nImpact summary: Applications that use the function EVP_PKEY_public_check()\nto check RSA public keys may experience long delays. Where the key that\nis being checked has been obtained from an untrusted source this may lead\nto a Denial of Service.\n\nWhen function EVP_PKEY_public_check() is called on RSA public keys,\na computation is done to confirm that the RSA modulus, n, is composite.\nFor valid RSA keys, n is a product of two or more large primes and this\ncomputation completes quickly. However, if n is an overly large prime,\nthen this computation would take a long time.\n\nAn application that calls EVP_PKEY_public_check() and supplies an RSA key\nobtained from an untrusted source could be vulnerable to a Denial of Service\nattack.\n\nThe function EVP_PKEY_public_check() is not called from other OpenSSL\nfunctions however it is called from the OpenSSL pkey command line\napplication. For that reason that application is also vulnerable if used\nwith the '-pubin' and '-check' options on untrusted data.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.",
+                        "Package": "libssl3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.4-r4",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-04-25T07:15:45.27Z",
+                        "LastModifiedDate": "2024-11-21T08:43:25.997Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-0727",
+                        "Severity": "MEDIUM",
+                        "Title": "openssl: denial of service via null dereference",
+                        "Description": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+                        "Package": "libssl3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.4-r5",
+                        "CVSS": {
+                            "ghsa": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-01-26T09:15:07.637Z",
+                        "LastModifiedDate": "2025-11-03T22:16:34.223Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-13176",
+                        "Severity": "MEDIUM",
+                        "Title": "openssl: Timing side-channel in ECDSA signature computation",
+                        "Description": "Issue summary: A timing side-channel which could potentially allow recovering\nthe private key exists in the ECDSA signature computation.\n\nImpact summary: A timing side-channel in ECDSA signature computations\ncould allow recovering the private key by an attacker. However, measuring\nthe timing would require either local access to the signing application or\na very fast network connection with low latency.\n\nThere is a timing signal of around 300 nanoseconds when the top word of\nthe inverted ECDSA nonce value is zero. This can happen with significant\nprobability only for some of the supported elliptic curves. In particular\nthe NIST P-521 curve is affected. To be able to measure this leak, the attacker\nprocess must either be located in the same physical computer or must\nhave a very fast network connection with low latency. For that reason\nthe severity of this vulnerability is Low.\n\nThe FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are affected by this issue.",
+                        "Package": "libssl3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.8-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "V3Score": 4.7
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2025-01-20T14:15:26.247Z",
+                        "LastModifiedDate": "2025-11-03T20:16:08.203Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-4603",
+                        "Severity": "MEDIUM",
+                        "Title": "openssl: Excessive time spent checking DSA keys and parameters",
+                        "Description": "Issue summary: Checking excessively long DSA keys or parameters may be very\nslow.\n\nImpact summary: Applications that use the functions EVP_PKEY_param_check()\nor EVP_PKEY_public_check() to check a DSA public key or DSA parameters may\nexperience long delays. Where the key or parameters that are being checked\nhave been obtained from an untrusted source this may lead to a Denial of\nService.\n\nThe functions EVP_PKEY_param_check() or EVP_PKEY_public_check() perform\nvarious checks on DSA parameters. Some of those computations take a long time\nif the modulus (`p` parameter) is too large.\n\nTrying to use a very large modulus is slow and OpenSSL will not allow using\npublic keys with a modulus which is over 10,000 bits in length for signature\nverification. However the key and parameter check functions do not limit\nthe modulus size when performing the checks.\n\nAn application that calls EVP_PKEY_param_check() or EVP_PKEY_public_check()\nand supplies a key or parameters obtained from an untrusted source could be\nvulnerable to a Denial of Service attack.\n\nThese functions are not called by OpenSSL itself on untrusted DSA keys so\nonly applications that directly call these functions may be vulnerable.\n\nAlso vulnerable are the OpenSSL pkey and pkeyparam command line applications\nwhen using the `-check` option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are affected by this issue.",
+                        "Package": "libssl3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.5-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 5.3
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-05-16T16:15:10.643Z",
+                        "LastModifiedDate": "2024-11-21T09:43:11.753Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-4741",
+                        "Severity": "MEDIUM",
+                        "Title": "openssl: Use After Free with SSL_free_buffers",
+                        "Description": "Issue summary: Calling the OpenSSL API function SSL_free_buffers may cause\nmemory to be accessed that was previously freed in some situations\n\nImpact summary: A use after free can have a range of potential consequences such\nas the corruption of valid data, crashes or execution of arbitrary code.\nHowever, only applications that directly call the SSL_free_buffers function are\naffected by this issue. Applications that do not call this function are not\nvulnerable. Our investigations indicate that this function is rarely used by\napplications.\n\nThe SSL_free_buffers function is used to free the internal OpenSSL buffer used\nwhen processing an incoming record from the network. The call is only expected\nto succeed if the buffer is not currently in use. However, two scenarios have\nbeen identified where the buffer is freed even when still in use.\n\nThe first scenario occurs where a record header has been received from the\nnetwork and processed by OpenSSL, but the full record body has not yet arrived.\nIn this case calling SSL_free_buffers will succeed even though a record has only\nbeen partially processed and the buffer is still in use.\n\nThe second scenario occurs where a full record containing application data has\nbeen received and processed by OpenSSL but the application has only read part of\nthis data. Again a call to SSL_free_buffers will succeed even though the buffer\nis still in use.\n\nWhile these scenarios could occur accidentally during normal operation a\nmalicious attacker could attempt to engineer a stituation where this occurs.\nWe are not aware of this issue being actively exploited.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+                        "Package": "libssl3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.6-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "V3Score": 5.6
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-11-13T11:15:04.48Z",
+                        "LastModifiedDate": "2025-11-04T18:16:42.5Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-5535",
+                        "Severity": "MEDIUM",
+                        "Title": "openssl: SSL_select_next_proto buffer overread",
+                        "Description": "Issue summary: Calling the OpenSSL API function SSL_select_next_proto with an\nempty supported client protocols buffer may cause a crash or memory contents to\nbe sent to the peer.\n\nImpact summary: A buffer overread can have a range of potential consequences\nsuch as unexpected application beahviour or a crash. In particular this issue\ncould result in up to 255 bytes of arbitrary private data from memory being sent\nto the peer leading to a loss of confidentiality. However, only applications\nthat directly call the SSL_select_next_proto function with a 0 length list of\nsupported client protocols are affected by this issue. This would normally never\nbe a valid scenario and is typically not under attacker control but may occur by\naccident in the case of a configuration or programming error in the calling\napplication.\n\nThe OpenSSL API function SSL_select_next_proto is typically used by TLS\napplications that support ALPN (Application Layer Protocol Negotiation) or NPN\n(Next Protocol Negotiation). NPN is older, was never standardised and\nis deprecated in favour of ALPN. We believe that ALPN is significantly more\nwidely deployed than NPN. The SSL_select_next_proto function accepts a list of\nprotocols from the server and a list of protocols from the client and returns\nthe first protocol that appears in the server list that also appears in the\nclient list. In the case of no overlap between the two lists it returns the\nfirst item in the client list. In either case it will signal whether an overlap\nbetween the two lists was found. In the case where SSL_select_next_proto is\ncalled with a zero length client list it fails to notice this condition and\nreturns the memory immediately following the client list pointer (and reports\nthat there was no overlap in the lists).\n\nThis function is typically called from a server side application callback for\nALPN or a client side application callback for NPN. In the case of ALPN the list\nof protocols supplied by the client is guaranteed by libssl to never be zero in\nlength. The list of server protocols comes from the application and should never\nnormally be expected to be of zero length. In this case if the\nSSL_select_next_proto function has been called as expected (with the list\nsupplied by the client passed in the client/client_len parameters), then the\napplication will not be vulnerable to this issue. If the application has\naccidentally been configured with a zero length server list, and has\naccidentally passed that zero length server list in the client/client_len\nparameters, and has additionally failed to correctly handle a \"no overlap\"\nresponse (which would normally result in a handshake failure in ALPN) then it\nwill be vulnerable to this problem.\n\nIn the case of NPN, the protocol permits the client to opportunistically select\na protocol when there is no overlap. OpenSSL returns the first client protocol\nin the no overlap case in support of this. The list of client protocols comes\nfrom the application and should never normally be expected to be of zero length.\nHowever if the SSL_select_next_proto function is accidentally called with a\nclient_len of 0 then an invalid memory pointer will be returned instead. If the\napplication uses this output as the opportunistic protocol then the loss of\nconfidentiality will occur.\n\nThis issue has been assessed as Low severity because applications are most\nlikely to be vulnerable if they are using NPN instead of ALPN - but NPN is not\nwidely used. It also requires an application configuration or programming error.\nFinally, this issue would not typically be under attacker control making active\nexploitation unlikely.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.\n\nDue to the low severity of this issue we are not issuing new releases of\nOpenSSL at this time. The fix will be included in the next releases when they\nbecome available.",
+                        "Package": "libssl3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.6-r0",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.9
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-06-27T11:15:24.447Z",
+                        "LastModifiedDate": "2025-11-03T23:17:30.51Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-2511",
+                        "Severity": "LOW",
+                        "Title": "openssl: Unbounded memory growth with session handling in TLSv1.3",
+                        "Description": "Issue summary: Some non-default TLS server configurations can cause unbounded\nmemory growth when processing TLSv1.3 sessions\n\nImpact summary: An attacker may exploit certain server configurations to trigger\nunbounded memory growth that would lead to a Denial of Service\n\nThis problem can occur in TLSv1.3 if the non-default SSL_OP_NO_TICKET option is\nbeing used (but not if early_data support is also configured and the default\nanti-replay protection is in use). In this case, under certain conditions, the\nsession cache can get into an incorrect state and it will fail to flush properly\nas it fills. The session cache will continue to grow in an unbounded manner. A\nmalicious client could deliberately create the scenario for this failure to\nforce a Denial of Service. It may also happen by accident in normal operation.\n\nThis issue only affects TLS servers supporting TLSv1.3. It does not affect TLS\nclients.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue. OpenSSL\n1.0.2 is also not affected by this issue.",
+                        "Package": "libssl3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.4-r6",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 3.7
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-04-08T14:15:07.66Z",
+                        "LastModifiedDate": "2025-11-03T22:16:50.9Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-9143",
+                        "Severity": "LOW",
+                        "Title": "openssl: Low-level invalid GF(2^m) parameters lead to OOB memory access",
+                        "Description": "Issue summary: Use of the low-level GF(2^m) elliptic curve APIs with untrusted\nexplicit values for the field polynomial can lead to out-of-bounds memory reads\nor writes.\n\nImpact summary: Out of bound memory writes can lead to an application crash or\neven a possibility of a remote code execution, however, in all the protocols\ninvolving Elliptic Curve Cryptography that we're aware of, either only \"named\ncurves\" are supported, or, if explicit curve parameters are supported, they\nspecify an X9.62 encoding of binary (GF(2^m)) curves that can't represent\nproblematic input values. Thus the likelihood of existence of a vulnerable\napplication is low.\n\nIn particular, the X9.62 encoding is used for ECC keys in X.509 certificates,\nso problematic inputs cannot occur in the context of processing X.509\ncertificates.  Any problematic use-cases would have to be using an \"exotic\"\ncurve encoding.\n\nThe affected APIs include: EC_GROUP_new_curve_GF2m(), EC_GROUP_new_from_params(),\nand various supporting BN_GF2m_*() functions.\n\nApplications working with \"exotic\" explicit binary (GF(2^m)) curve parameters,\nthat make it possible to represent invalid field polynomials with a zero\nconstant term, via the above or similar APIs, may terminate abruptly as a\nresult of reading or writing outside of array bounds.  Remote code execution\ncannot easily be ruled out.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.",
+                        "Package": "libssl3",
+                        "InstalledVersion": "3.1.2-r0",
+                        "FixedVersion": "3.1.7-r1",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                                "V3Score": 3.7
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-10-16T17:15:18.13Z",
+                        "LastModifiedDate": "2025-11-03T23:17:33.46Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2025-26519",
+                        "Severity": "HIGH",
+                        "Title": "musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write ...",
+                        "Description": "musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write vulnerability when an attacker can trigger iconv conversion of untrusted EUC-KR text to UTF-8.",
+                        "Package": "musl",
+                        "InstalledVersion": "1.2.4-r1",
+                        "FixedVersion": "1.2.4-r3",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "V3Score": 7
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2025-02-14T04:15:09.05Z",
+                        "LastModifiedDate": "2025-12-10T20:03:59.273Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2025-26519",
+                        "Severity": "HIGH",
+                        "Title": "musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write ...",
+                        "Description": "musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write vulnerability when an attacker can trigger iconv conversion of untrusted EUC-KR text to UTF-8.",
+                        "Package": "musl-utils",
+                        "InstalledVersion": "1.2.4-r1",
+                        "FixedVersion": "1.2.4-r3",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "V3Score": 7
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2025-02-14T04:15:09.05Z",
+                        "LastModifiedDate": "2025-12-10T20:03:59.273Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-7104",
+                        "Severity": "HIGH",
+                        "Title": "sqlite: heap-buffer-overflow at sessionfuzz",
+                        "Description": "A vulnerability was found in SQLite SQLite3 up to 3.43.0 and classified as critical. This issue affects the function sessionReadRecord of the file ext/session/sqlite3session.c of the component make alltest Handler. The manipulation leads to heap-based buffer overflow. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-248999.",
+                        "Package": "sqlite-libs",
+                        "InstalledVersion": "3.41.2-r2",
+                        "FixedVersion": "3.41.2-r3",
+                        "CVSS": {
+                            "bitnami": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "V3Score": 7.3
+                            },
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "V3Score": 7.3
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "V3Score": 7.3
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-12-29T10:15:13.89Z",
+                        "LastModifiedDate": "2025-11-03T22:16:33.307Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42363",
+                        "Severity": "MEDIUM",
+                        "Title": "busybox: use-after-free in awk",
+                        "Description": "A use-after-free vulnerability was discovered in xasprintf function in xfuncs_printf.c:344 in BusyBox v.1.36.1.",
+                        "Package": "ssl_client",
+                        "InstalledVersion": "1.36.1-r2",
+                        "FixedVersion": "1.36.1-r7",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-11-27T22:15:07.94Z",
+                        "LastModifiedDate": "2024-11-21T08:22:28.403Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42364",
+                        "Severity": "MEDIUM",
+                        "Title": "busybox: use-after-free",
+                        "Description": "A use-after-free vulnerability in BusyBox v.1.36.1 allows attackers to cause a denial of service via a crafted awk pattern in the awk.c evaluate function.",
+                        "Package": "ssl_client",
+                        "InstalledVersion": "1.36.1-r2",
+                        "FixedVersion": "1.36.1-r7",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-11-27T23:15:07.313Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.17Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42365",
+                        "Severity": "MEDIUM",
+                        "Title": "busybox: use-after-free",
+                        "Description": "A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.",
+                        "Package": "ssl_client",
+                        "InstalledVersion": "1.36.1-r2",
+                        "FixedVersion": "1.36.1-r7",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 7.8
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-11-27T23:15:07.373Z",
+                        "LastModifiedDate": "2025-11-03T21:16:01.393Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-42366",
+                        "Severity": "MEDIUM",
+                        "Title": "busybox: A heap-buffer-overflow",
+                        "Description": "A heap-buffer-overflow was discovered in BusyBox v.1.36.1 in the next_token function at awk.c:1159.",
+                        "Package": "ssl_client",
+                        "InstalledVersion": "1.36.1-r2",
+                        "FixedVersion": "1.36.1-r6",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "V3Score": 5.5
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+                                "V3Score": 7.1
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-11-27T23:15:07.42Z",
+                        "LastModifiedDate": "2024-12-06T14:15:19.53Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2025-31115",
+                        "Severity": "HIGH",
+                        "Title": "xz: XZ has a heap-use-after-free bug in threaded .xz decoder",
+                        "Description": "XZ Utils provide a general-purpose data-compression library plus command-line tools. In XZ Utils 5.3.3alpha to 5.8.0, the multithreaded .xz decoder in liblzma has a bug where invalid input can at least result in a crash. The effects include heap use after free and writing to an address based on the null pointer plus an offset. Applications and libraries that use the lzma_stream_decoder_mt function are affected. The bug has been fixed in XZ Utils 5.8.1, and the fix has been committed to the v5.4, v5.6, v5.8, and master branches in the xz Git repository. No new release packages will be made from the old stable branches, but a standalone patch is available that applies to all affected releases.",
+                        "Package": "xz-libs",
+                        "InstalledVersion": "5.4.3-r0",
+                        "FixedVersion": "5.4.3-r1",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "V3Score": 7.5
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2025-04-03T17:15:30.54Z",
+                        "LastModifiedDate": "2025-04-07T14:18:34.453Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2023-5752",
+                        "Severity": "MEDIUM",
+                        "Title": "pip: Mercurial configuration injectable in repo revision when installing via pip",
+                        "Description": "When installing a package from a Mercurial VCS URL  (ie \"pip install \nhg+...\") with pip prior to v23.3, the specified Mercurial revision could\n be used to inject arbitrary configuration options to the \"hg clone\" \ncall (ie \"--config\"). Controlling the Mercurial configuration can modify\n how and which repository is installed. This vulnerability does not \naffect users who aren't installing from Mercurial.",
+                        "Package": "pip",
+                        "InstalledVersion": "23.1.2",
+                        "FixedVersion": "23.3",
+                        "CVSS": {
+                            "bitnami": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+                                "V3Score": 3.3
+                            },
+                            "ghsa": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+                                "V3Score": 5.5
+                            },
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+                                "V3Score": 3.3
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+                                "V3Score": 3.3
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2023-10-25T18:17:44.867Z",
+                        "LastModifiedDate": "2025-11-03T18:15:41.173Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2025-8869",
+                        "Severity": "MEDIUM",
+                        "Title": "pip: pip missing checks on symbolic link extraction",
+                        "Description": "When extracting a tar archive pip may not check symbolic links point into the extraction directory if the tarfile module doesn't implement PEP 706.\nNote that upgrading pip to a \"fixed\" version for this vulnerability doesn't fix all known vulnerabilities that are remediated by using a Python version that implements PEP 706.\n\nNote that this is a vulnerability in pip's fallback implementation of tar extraction for Python versions that don't implement PEP 706\nand therefore are not secure to all vulnerabilities in the Python 'tarfile' module. If you're using a Python version that implements PEP 706\nthen pip doesn't use the \"vulnerable\" fallback code.\n\nMitigations include upgrading to a version of pip that includes the fix, upgrading to a Python version that implements PEP 706 (Python >=3.9.17, >=3.10.12, >=3.11.4, or >=3.12),\napplying the linked patch, or inspecting source distributions (sdists) before installation as is already a best-practice.",
+                        "Package": "pip",
+                        "InstalledVersion": "23.1.2",
+                        "FixedVersion": "25.3",
+                        "CVSS": {
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+                                "V3Score": 5.3
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2025-09-24T15:15:41.293Z",
+                        "LastModifiedDate": "2025-11-03T18:17:02.783Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2024-6345",
+                        "Severity": "HIGH",
+                        "Title": "pypa/setuptools: Remote code execution via download functions in the package_index module in pypa/setuptools",
+                        "Description": "A vulnerability in the package_index module of pypa/setuptools versions up to 69.1.1 allows for remote code execution via its download functions. These functions, which are used to download packages from URLs provided by users or retrieved from package index servers, are susceptible to code injection. If these functions are exposed to user-controlled inputs, such as package URLs, they can execute arbitrary commands on the system. The issue is fixed in version 70.0.",
+                        "Package": "setuptools",
+                        "InstalledVersion": "65.5.1",
+                        "FixedVersion": "70.0.0",
+                        "CVSS": {
+                            "bitnami": {
+                                "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 8.8
+                            },
+                            "ghsa": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 8.8
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "V3Score": 8.8
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2024-07-15T01:15:01.73Z",
+                        "LastModifiedDate": "2025-11-04T17:16:16.143Z"
+                    },
+                    {
+                        "VulnerabilityID": "CVE-2025-47273",
+                        "Severity": "HIGH",
+                        "Title": "setuptools: Path Traversal Vulnerability in setuptools PackageIndex",
+                        "Description": "setuptools is a package that allows users to download, build, install, upgrade, and uninstall Python packages. A path traversal vulnerability in `PackageIndex` is present in setuptools prior to version 78.1.1. An attacker would be allowed to write files to arbitrary locations on the filesystem with the permissions of the process running the Python code, which could escalate to remote code execution depending on the context. Version 78.1.1 fixes the issue.",
+                        "Package": "setuptools",
+                        "InstalledVersion": "65.5.1",
+                        "FixedVersion": "78.1.1",
+                        "CVSS": {
+                            "nvd": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "V3Score": 8.8
+                            },
+                            "redhat": {
+                                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L",
+                                "V3Score": 7.1
+                            }
+                        },
+                        "DataSource": "Trivy",
+                        "PublishedDate": "2025-05-17T16:15:19.11Z",
+                        "LastModifiedDate": "2025-06-12T16:29:01.66Z"
+                    }
+                ]
+            }
+        ],
+        "errors": "2026-01-07T20:13:07Z\tINFO\t[vulndb] Need to update DB\n2026-01-07T20:13:07Z\tINFO\t[vulndb] Downloading vulnerability DB...\n2026-01-07T20:13:07Z\tINFO\t[vulndb] Downloading artifact...\trepo=\"mirror.gcr.io/aquasec/trivy-db:2\"\n783.13 KiB / 79.83 MiB [>____________________________________________________________] 0.96% ? p/s ?2.02 MiB / 79.83 MiB [->_____________________________________________________________] 2.52% ? p/s ?4.23 MiB / 79.83 MiB [--->___________________________________________________________] 5.30% ? p/s ?6.09 MiB / 79.83 MiB [--->_______________________________________________] 7.63% 8.89 MiB p/s ETA 8s8.47 MiB / 79.83 MiB [----->____________________________________________] 10.61% 8.89 MiB p/s ETA 8s10.94 MiB / 79.83 MiB [------>__________________________________________] 13.70% 8.89 MiB p/s ETA 7s13.17 MiB / 79.83 MiB [-------->________________________________________] 16.50% 9.08 MiB p/s ETA 7s15.41 MiB / 79.83 MiB [--------->_______________________________________] 19.30% 9.08 MiB p/s ETA 7s17.63 MiB / 79.83 MiB [---------->______________________________________] 22.08% 9.08 MiB p/s ETA 6s19.91 MiB / 79.83 MiB [------------>____________________________________] 24.94% 9.22 MiB p/s ETA 6s22.14 MiB / 79.83 MiB [------------->___________________________________] 27.74% 9.22 MiB p/s ETA 6s24.39 MiB / 79.83 MiB [-------------->__________________________________] 30.55% 9.22 MiB p/s ETA 6s27.07 MiB / 79.83 MiB [---------------->________________________________] 33.91% 9.39 MiB p/s ETA 5s29.95 MiB / 79.83 MiB [------------------>______________________________] 37.52% 9.39 MiB p/s ETA 5s32.73 MiB / 79.83 MiB [-------------------->____________________________] 41.00% 9.39 MiB p/s ETA 5s35.55 MiB / 79.83 MiB [--------------------->___________________________] 44.53% 9.70 MiB p/s ETA 4s38.22 MiB / 79.83 MiB [----------------------->_________________________] 47.87% 9.70 MiB p/s ETA 4s41.03 MiB / 79.83 MiB [------------------------->_______________________] 51.40% 9.70 MiB p/s ETA 4s43.84 MiB / 79.83 MiB [-------------------------->______________________] 54.92% 9.96 MiB p/s ETA 3s46.59 MiB / 79.83 MiB [---------------------------->____________________] 58.37% 9.96 MiB p/s ETA 3s49.28 MiB / 79.83 MiB [------------------------------>__________________] 61.73% 9.96 MiB p/s ETA 3s52.06 MiB / 79.83 MiB [------------------------------->________________] 65.22% 10.21 MiB p/s ETA 2s54.86 MiB / 79.83 MiB [-------------------------------->_______________] 68.72% 10.21 MiB p/s ETA 2s57.59 MiB / 79.83 MiB [---------------------------------->_____________] 72.14% 10.21 MiB p/s ETA 2s60.52 MiB / 79.83 MiB [------------------------------------>___________] 75.80% 10.46 MiB p/s ETA 1s63.02 MiB / 79.83 MiB [------------------------------------->__________] 78.94% 10.46 MiB p/s ETA 1s65.80 MiB / 79.83 MiB [--------------------------------------->________] 82.42% 10.46 MiB p/s ETA 1s68.44 MiB / 79.83 MiB [----------------------------------------->______] 85.73% 10.63 MiB p/s ETA 1s71.08 MiB / 79.83 MiB [------------------------------------------>_____] 89.04% 10.63 MiB p/s ETA 0s73.94 MiB / 79.83 MiB [-------------------------------------------->___] 92.62% 10.63 MiB p/s ETA 0s76.64 MiB / 79.83 MiB [---------------------------------------------->_] 96.00% 10.83 MiB p/s ETA 0s79.42 MiB / 79.83 MiB [----------------------------------------------->] 99.49% 10.83 MiB p/s ETA 0s79.83 MiB / 79.83 MiB [---------------------------------------------->] 100.00% 10.83 MiB p/s ETA 0s79.83 MiB / 79.83 MiB [---------------------------------------------->] 100.00% 10.47 MiB p/s ETA 0s79.83 MiB / 79.83 MiB [---------------------------------------------->] 100.00% 10.47 MiB p/s ETA 0s79.83 MiB / 79.83 MiB [---------------------------------------------->] 100.00% 10.47 MiB p/s ETA 0s79.83 MiB / 79.83 MiB [----------------------------------------------->] 100.00% 9.80 MiB p/s ETA 0s79.83 MiB / 79.83 MiB [----------------------------------------------->] 100.00% 9.80 MiB p/s ETA 0s79.83 MiB / 79.83 MiB [----------------------------------------------->] 100.00% 9.80 MiB p/s ETA 0s79.83 MiB / 79.83 MiB [----------------------------------------------->] 100.00% 9.17 MiB p/s ETA 0s79.83 MiB / 79.83 MiB [----------------------------------------------->] 100.00% 9.17 MiB p/s ETA 0s79.83 MiB / 79.83 MiB [----------------------------------------------->] 100.00% 9.17 MiB p/s ETA 0s79.83 MiB / 79.83 MiB [----------------------------------------------->] 100.00% 8.57 MiB p/s ETA 0s79.83 MiB / 79.83 MiB [----------------------------------------------->] 100.00% 8.57 MiB p/s ETA 0s79.83 MiB / 79.83 MiB [--------------------------------------------------] 100.00% 9.27 MiB p/s 8.8s2026-01-07T20:13:16Z\tINFO\t[vulndb] Artifact successfully downloaded\trepo=\"mirror.gcr.io/aquasec/trivy-db:2\"\n2026-01-07T20:13:16Z\tINFO\t[vuln] Vulnerability scanning is enabled\n2026-01-07T20:13:16Z\tINFO\t[secret] Secret scanning is enabled\n2026-01-07T20:13:16Z\tINFO\t[secret] If your scanning is slow, please try '--scanners vuln' to disable secret scanning\n2026-01-07T20:13:16Z\tINFO\t[secret] Please see https://trivy.dev/docs/v0.68/guide/scanner/secret#recommendation for faster secret detection\n2026-01-07T20:13:19Z\tINFO\t[python] Licenses acquired from one or more METADATA files may be subject to additional terms. Use `--debug` flag to see all affected packages.\n2026-01-07T20:13:19Z\tINFO\tDetected OS\tfamily=\"alpine\" version=\"3.18.3\"\n2026-01-07T20:13:19Z\tINFO\t[alpine] Detecting vulnerabilities...\tos_version=\"3.18\" repository=\"3.18\" pkg_num=38\n2026-01-07T20:13:19Z\tINFO\tNumber of language-specific files\tnum=1\n2026-01-07T20:13:19Z\tINFO\t[python-pkg] Detecting vulnerabilities...\n2026-01-07T20:13:19Z\tWARN\tUsing severities from other vendors for some vulnerabilities. Read https://trivy.dev/docs/v0.68/guide/scanner/vulnerability#severity-selection for details.\n2026-01-07T20:13:19Z\tWARN\tThis OS version is no longer supported by the distribution\tfamily=\"alpine\" version=\"3.18.3\"\n2026-01-07T20:13:19Z\tWARN\tThe vulnerability detection may be insufficient because security updates are not provided\n"
+    },
+    "bandit": {
+        "tool": "bandit",
+        "type": "SAST",
+        "errors": "",
+        "results": [
+            {
+                "Target": ".",
+                "Type": "bandit",
+                "Vulnerabilities": []
+            }
+        ]
+    },
+    "checkov": {
+        "tool": "checkov",
+        "type": "iac",
+        "results": [
+            {
+                "Target": ".",
+                "Type": "iac",
+                "Vulnerabilities": [
+                    {
+                        "VulnerabilityID": "CKV_AWS_23",
+                        "Severity": null,
+                        "Title": "Ensure every security group and rule has a description",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31",
+                        "File": "\\terraform\\main.tf",
+                        "Line": 5,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-31"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_382",
+                        "Severity": null,
+                        "Title": "Ensure no security groups allow egress from 0.0.0.0:0 to port -1",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382",
+                        "File": "\\terraform\\main.tf",
+                        "Line": 5,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/bc-aws-382"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_24",
+                        "Severity": null,
+                        "Title": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 22",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-1-port-security",
+                        "File": "\\terraform\\main.tf",
+                        "Line": 5,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-1-port-security"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_25",
+                        "Severity": null,
+                        "Title": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 3389",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-2",
+                        "File": "\\terraform\\main.tf",
+                        "Line": 5,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/networking-2"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_260",
+                        "Severity": null,
+                        "Title": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 80",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-groups-do-not-allow-ingress-from-00000-to-port-80",
+                        "File": "\\terraform\\main.tf",
+                        "Line": 5,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-aws-security-groups-do-not-allow-ingress-from-00000-to-port-80"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_129",
+                        "Severity": null,
+                        "Title": "Ensure that respective logs of Amazon Relational Database Service (Amazon RDS) are enabled",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-that-respective-logs-of-amazon-relational-database-service-amazon-rds-are-enabled",
+                        "File": "\\terraform\\main.tf",
+                        "Line": 29,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-that-respective-logs-of-amazon-relational-database-service-amazon-rds-are-enabled"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_226",
+                        "Severity": null,
+                        "Title": "Ensure DB instance gets all minor upgrades automatically",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-db-instance-gets-all-minor-upgrades-automatically",
+                        "File": "\\terraform\\main.tf",
+                        "Line": 29,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-aws-db-instance-gets-all-minor-upgrades-automatically"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_16",
+                        "Severity": null,
+                        "Title": "Ensure all data stored in the RDS is securely encrypted at rest",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-4",
+                        "File": "\\terraform\\main.tf",
+                        "Line": 29,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-4"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_118",
+                        "Severity": null,
+                        "Title": "Ensure that enhanced monitoring is enabled for Amazon RDS instances",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-enhanced-monitoring-is-enabled-for-amazon-rds-instances",
+                        "File": "\\terraform\\main.tf",
+                        "Line": 29,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/ensure-that-enhanced-monitoring-is-enabled-for-amazon-rds-instances"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_161",
+                        "Severity": null,
+                        "Title": "Ensure RDS database has IAM authentication enabled",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-rds-database-has-iam-authentication-enabled",
+                        "File": "\\terraform\\main.tf",
+                        "Line": 29,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-iam-policies/ensure-rds-database-has-iam-authentication-enabled"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_293",
+                        "Severity": null,
+                        "Title": "Ensure that AWS database instances have deletion protection enabled",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-293",
+                        "File": "\\terraform\\main.tf",
+                        "Line": 29,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-293"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_157",
+                        "Severity": null,
+                        "Title": "Ensure that RDS instances have Multi-AZ enabled",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-73",
+                        "File": "\\terraform\\main.tf",
+                        "Line": 29,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/general-73"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_17",
+                        "Severity": null,
+                        "Title": "Ensure all data stored in RDS is not publicly accessible",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-2",
+                        "File": "\\terraform\\main.tf",
+                        "Line": 29,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/public-policies/public-2"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV2_AWS_60",
+                        "Severity": null,
+                        "Title": "Ensure RDS instance with copy tags to snapshots is enabled",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-2-60",
+                        "File": "\\main.tf",
+                        "Line": 29,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/bc-aws-2-60"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV2_AWS_62",
+                        "Severity": null,
+                        "Title": "Ensure S3 buckets should have event notifications enabled",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-62",
+                        "File": "\\main.tf",
+                        "Line": 23,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-62"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV2_AWS_6",
+                        "Severity": null,
+                        "Title": "Ensure that S3 bucket has a Public Access block",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/s3-bucket-should-have-public-access-blocks-defaults-to-false-if-the-public-access-block-is-not-attached",
+                        "File": "\\main.tf",
+                        "Line": 23,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/s3-bucket-should-have-public-access-blocks-defaults-to-false-if-the-public-access-block-is-not-attached"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV2_AWS_61",
+                        "Severity": null,
+                        "Title": "Ensure that an S3 bucket has a lifecycle configuration",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-61",
+                        "File": "\\main.tf",
+                        "Line": 23,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-logging-policies/bc-aws-2-61"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_21",
+                        "Severity": null,
+                        "Title": "Ensure all data stored in the S3 bucket have versioning enabled",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-16-enable-versioning",
+                        "File": "\\main.tf",
+                        "Line": 23,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-16-enable-versioning"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_145",
+                        "Severity": null,
+                        "Title": "Ensure that S3 buckets are encrypted with KMS by default",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-buckets-are-encrypted-with-kms-by-default",
+                        "File": "\\main.tf",
+                        "Line": 23,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-buckets-are-encrypted-with-kms-by-default"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_20",
+                        "Severity": null,
+                        "Title": "S3 Bucket has an ACL defined which allows public READ access.",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-1-acl-read-permissions-everyone",
+                        "File": "\\main.tf",
+                        "Line": 23,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-1-acl-read-permissions-everyone"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV2_AWS_5",
+                        "Severity": null,
+                        "Title": "Ensure that Security Groups are attached to another resource",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-security-groups-are-attached-to-ec2-instances-or-elastic-network-interfaces-enis",
+                        "File": "\\main.tf",
+                        "Line": 5,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-networking-policies/ensure-that-security-groups-are-attached-to-ec2-instances-or-elastic-network-interfaces-enis"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_144",
+                        "Severity": null,
+                        "Title": "Ensure that S3 bucket has cross-region replication enabled",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-bucket-has-cross-region-replication-enabled",
+                        "File": "\\main.tf",
+                        "Line": 23,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/aws-general-policies/ensure-that-s3-bucket-has-cross-region-replication-enabled"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_AWS_18",
+                        "Severity": null,
+                        "Title": "Ensure the S3 bucket has access logging enabled",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-13-enable-logging",
+                        "File": "\\main.tf",
+                        "Line": 23,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/aws-policies/s3-policies/s3-13-enable-logging"
+                        ]
+                    },
+                    {
+                        "VulnerabilityID": "CKV_DOCKER_2",
+                        "Severity": null,
+                        "Title": "Ensure that HEALTHCHECK instructions have been added to container images",
+                        "Description": "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-that-healthcheck-instructions-have-been-added-to-container-images",
+                        "File": "/Dockerfile",
+                        "Line": 1,
+                        "CVSS": {},
+                        "References": [
+                            "https://docs.prismacloud.io/en/enterprise-edition/policy-reference/docker-policies/docker-policy-index/ensure-that-healthcheck-instructions-have-been-added-to-container-images"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "errors": "File association not found for extension .py\n"
+    }
+}

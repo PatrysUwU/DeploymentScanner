@@ -1,5 +1,5 @@
-import subprocess
 import json
+import subprocess
 from pathlib import Path
 
 
@@ -8,14 +8,11 @@ class BaseHandler:
         self.proj_path = Path(proj_path)
 
     def run_cmd(self, cmd: list[str]) -> tuple[int, str, str]:
-        try:
-            proc = subprocess.Popen(
-                cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
-            )
-            out, err = proc.communicate()
-            return proc.returncode, out, err
-        except Exception as e:
-            return -1, "", str(e)
+        proc = subprocess.Popen(
+            cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+        )
+        out, err = proc.communicate()
+        return proc.returncode, out, err
 
     def parse_json(self, text: str):
         try:

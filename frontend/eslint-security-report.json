@@ -1,0 +1,245 @@
+[
+  {
+    "filePath": "C:\\Users\\Patrys\\Desktop\\repos\\DeploymentScanner\\frontend\\src\\bad.jsx",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'dangerousEval' is defined but never used. Allowed unused vars must match /^[A-Z_]/u.",
+        "line": 2,
+        "column": 10,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 2,
+        "endColumn": 23,
+        "suggestions": [
+          {
+            "messageId": "removeVar",
+            "data": { "varName": "dangerousEval" },
+            "fix": { "range": [47, 138], "text": "" },
+            "desc": "Remove unused variable 'dangerousEval'."
+          }
+        ]
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'fn' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+        "line": 7,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 7,
+        "endColumn": 9
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'userInput' is not defined.",
+        "line": 7,
+        "column": 37,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 7,
+        "endColumn": 46
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'element' is not defined.",
+        "line": 10,
+        "column": 1,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 10,
+        "endColumn": 8
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'userComment' is not defined.",
+        "line": 10,
+        "column": 21,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 10,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'userName' is not defined.",
+        "line": 13,
+        "column": 26,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 13,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'apiKey' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+        "line": 16,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 16,
+        "endColumn": 13,
+        "suggestions": [
+          {
+            "messageId": "removeVar",
+            "data": { "varName": "apiKey" },
+            "fix": { "range": [565, 597], "text": "" },
+            "desc": "Remove unused variable 'apiKey'."
+          }
+        ]
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'userPattern' is not defined.",
+        "line": 19,
+        "column": 18,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 19,
+        "endColumn": 29
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'event' is defined but never used.",
+        "line": 25,
+        "column": 37,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 25,
+        "endColumn": 42,
+        "suggestions": [
+          {
+            "messageId": "removeVar",
+            "data": { "varName": "event" },
+            "fix": { "range": [1057, 1062], "text": "" },
+            "desc": "Remove unused variable 'event'."
+          }
+        ]
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'require' is not defined.",
+        "line": 30,
+        "column": 18,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 30,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'userRepoUrl' is not defined.",
+        "line": 31,
+        "column": 19,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 31,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'userInput' is not defined.",
+        "line": 34,
+        "column": 14,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 34,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'value' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u.",
+        "line": 35,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 35,
+        "endColumn": 12,
+        "suggestions": [
+          {
+            "messageId": "removeVar",
+            "data": { "varName": "value" },
+            "fix": { "range": [1483, 1508], "text": "" },
+            "desc": "Remove unused variable 'value'."
+          }
+        ]
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'data' is not defined.",
+        "line": 35,
+        "column": 15,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 35,
+        "endColumn": 19
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 14,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "// 1. Użycie eval() – klasyczny czerwony alarm\nfunction dangerousEval(userInput) {\n  return eval(userInput); // ESLint security: no-eval\n}\n\n// 2. Użycie Function() konstruktora – prawie tak samo niebezpieczne jak eval\nconst fn = new Function(\"return \" + userInput); // no-new-func\n\n// 3. Bezpośrednie użycie innerHTML z niezaufanymi danymi\nelement.innerHTML = userComment; // no-inner-html\n\n// 4. Użycie document.write() – prawie zawsze zły pomysł\ndocument.write(\"<div>\" + userName + \"</div>\"); // no-document-write\n\n// 5. Hardcoded credentials / sekretów w kodzie\nconst apiKey = \"sk_live_51N...\"; // detect-object-injection + no-hardcoded-credentials (w nowszych wersjach)\n\n// 6. Niebezpieczne użycie RegExp z niezaufanym wejściem\nnew RegExp(\"^\" + userPattern + \"$\"); // no-unsafe-regex (może spowodować ReDoS)\n\n// 7. Użycie requestAnimationFrame / setTimeout z stringiem zamiast funkcji\nsetTimeout(\"alert('hacked')\", 100); // no-set-timeout-string (bardzo rzadko, ale wykrywa)\n\n// 8. PostMessage bez weryfikacji origin\nwindow.addEventListener(\"message\", (event) => {\n  // ... robimy coś z event.data bez sprawdzenia event.origin\n}); // no-postmessage-origin-check (bardzo ważna reguła)\n\n// 9. Użycie child_process.exec z niezaufanym wejściem (Node.js)\nconst { exec } = require(\"child_process\");\nexec(`git clone ${userRepoUrl}`); // no-exec-with-user-input (bardzo mocna reguła)\n\n// 10. Object injection – niebezpieczne użycie [] lub . z niezaufanym kluczem\nconst prop = userInput;\nconst value = data[prop]; // detect-object-injection\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\Patrys\\Desktop\\repos\\DeploymentScanner\\frontend\\src\\components\\MainPage.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\Patrys\\Desktop\\repos\\DeploymentScanner\\frontend\\src\\components\\MainPage\\Dashboard.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\Patrys\\Desktop\\repos\\DeploymentScanner\\frontend\\src\\components\\MainPage\\Gauge.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "C:\\Users\\Patrys\\Desktop\\repos\\DeploymentScanner\\frontend\\src\\main.jsx",
+    "messages": [],
+    "suppressedMessages": [],
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  }
+]

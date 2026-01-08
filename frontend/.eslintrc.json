@@ -1,0 +1,84 @@
+{
+  "env": {
+    "node": true,
+    "es2021": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["security", "no-secrets"],
+  "extends": ["plugin:security/recommended"],
+  "rules": {
+    // Podstawowe reguły bezpieczeństwa
+    "security/detect-object-injection": "error",
+    "security/detect-non-literal-regexp": "warn",
+    "security/detect-non-literal-require": "error",
+    "security/detect-non-literal-fs-filename": "error",
+    "security/detect-eval-with-expression": "error",
+    "security/detect-pseudorandomprgn": "warn",
+    "security/detect-possible-timing-attacks": "warn",
+    "security/detect-unsafe-regex": "error",
+    "security/detect-buffer-noassert": "error",
+    "security/detect-child-process": "warn",
+    "security/detect-disable-mustache-escape": "error",
+    "security/detect-no-csrf-before-method-override": "error",
+    "security/detect-bidi-characters": "error",
+
+    // Reguły dotyczące sekretów i danych wrażliwych
+    "no-secrets/no-secrets": "error",
+
+    // Ogólne reguły ESLint pomocne dla bezpieczeństwa
+    "no-eval": "error",
+    "no-implied-eval": "error",
+    "no-new-func": "error",
+    "no-script-url": "error",
+    "no-alert": "warn",
+    "no-console": "warn",
+
+    // Reguły dotyczące strict mode
+    "strict": ["error", "global"],
+
+    // Zabezpieczenia przed prototype pollution
+    "no-proto": "error",
+    "no-extend-native": "error",
+
+    // Kontrola nad globalnym this
+    "no-global-assign": "error",
+    "no-implicit-globals": "error",
+
+    // Bezpieczne używanie regex
+    "no-control-regex": "error",
+    "no-invalid-regexp": "error",
+
+    // Kontrola nad potencjalnie niebezpiecznymi operatorami
+    "no-bitwise": "warn",
+    "eqeqeq": ["error", "always"],
+
+    // Zapobieganie błędom typu
+    "valid-typeof": "error",
+    "no-undef": "error",
+    "no-unused-vars": ["warn", { "args": "none" }],
+
+    // Bezpieczne praktyki z async/await
+    "require-await": "warn",
+    "no-async-promise-executor": "error",
+    "no-await-in-loop": "warn",
+
+    // JSON security
+    "no-useless-escape": "error"
+  },
+  "overrides": [
+    {
+      "files": ["*.jsx"],
+      "rules": {
+        // Dodatkowe reguły dla JSX
+        "no-script-url": "error"
+      }
+    }
+  ]
+}
