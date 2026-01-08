@@ -52,7 +52,7 @@ def _normalize_dependency_vulnerabilities(trivy_images: Dict[str, Any]):
                 cvss_score = _extract_cvss_score(vuln)
 
                 # Oblicz score dla tej podatności: CVSS * 10 * 0.4
-                vuln_score = cvss_score * 10 * 0.4
+                vuln_score = cvss_score * 10
 
                 # Dodaj podobiekct after_normalizing do vulnerability
                 vuln["after_normalizing"] = {
@@ -81,7 +81,7 @@ def _normalize_infrastructure_config(trivy_misconfig: Dict[str, Any]):
             )
 
             # Oblicz score dla tej konfiguracji: severity * 0.35
-            config_score = severity_score * 0.35
+            config_score = severity_score
 
             # Dodaj podobiekct after_normalizing do misconfiguration
             misconfig["after_normalizing"] = {
@@ -110,7 +110,7 @@ def _normalize_sast_issues(bandit_results: Dict[str, Any]):
             )
 
             # Oblicz score dla tego problemu SAST: severity * 0.25
-            sast_score = severity_score * 0.25
+            sast_score = severity_score
 
             # Dodaj podobiekct after_normalizing do vulnerability
             vuln["after_normalizing"] = {

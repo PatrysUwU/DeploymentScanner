@@ -3,8 +3,6 @@ version: "3.8"
 services:
   web:
     build: .
-    ports:
-      - "0.0.0.0:80:80" #  publiczny binding
     environment:
       - DEBUG=true #  debug w prod
     privileged: true #  nadmierne uprawnienia
