@@ -23,7 +23,10 @@ resource "aws_security_group" "web_sg" {
 resource "aws_s3_bucket" "data_bucket" {
   bucket = "insecure-app-data"
 
-  acl    = "public-read" #  publiczny bucket
+  acl    = "public-read"
+  versioning {
+    enabled = true
+  }
 }
 
 resource "aws_db_instance" "db" {

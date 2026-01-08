@@ -1,11 +1,8 @@
-FROM python:3.9
+FROM python:3.10.19-trixie
 
 RUN pip install flask
 
 WORKDIR /app
 COPY . .
-
-USER root            #  root user
-EXPOSE 80
 
 CMD ["python", "app.py"]

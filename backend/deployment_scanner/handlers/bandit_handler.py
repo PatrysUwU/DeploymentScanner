@@ -14,7 +14,7 @@ class BanditHandler(BaseHandler):
             "-f",
             "json",
             "-x",
-            "./.venv",
+            "*.venv*",
             "-q",
         ]
 
