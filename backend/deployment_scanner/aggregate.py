@@ -40,7 +40,13 @@ def aggregate_scan(proj_path: str, docker_compose_path: Optional[str] = None) ->
     logging.info("Uruchamianie skanu Trivy misconfiguration...")
     results["trivy_misconfig"] = trivy.scan_misconfig(str(proj_path_obj))
 
-    # 3. WYCIĄGNIĘCIE OBRAZÓW Z DOCKER COMPOSE I SKANOWANIE
+    # 3. SKANOWANIE DOCKER COMPOSE SECURITY ISSUES
+    logging.info("Uruchamianie skanu Docker Compose security issues...")
+    results["docker_compose_security"] = _scan_docker_compose_security(
+        proj_path_obj, docker_compose_path
+    )
+
+    # 4. WYCIĄGNIĘCIE OBRAZÓW Z DOCKER COMPOSE I SKANOWANIE
     images_and_configs = _extract_images_with_config_from_project(
         proj_path_obj, docker_compose_path
     )
@@ -73,13 +79,6 @@ def aggregate_scan(proj_path: str, docker_compose_path: Optional[str] = None) ->
 
     # 4. GENEROWANIE PODSUMOWANIA
     results["summary"] = _generate_summary(results)
-
-    # 5. ZAPISANIE WYNIKÓW
-    output_file = proj_path_obj / "security_scan_results.json"
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=4, ensure_ascii=False)
-
-    logging.info(f"Wyniki zapisane do: {output_file}")
 
     return results
 
@@ -333,6 +332,71 @@ def _extract_base_image_from_dockerfile(
         return None
 
 
+def _scan_docker_compose_security(
+    proj_path: Path, docker_compose_path: Optional[str] = None
+) -> Dict[str, Any]:
+    """
+    Skanuje problemy bezpieczeństwa w plikach docker-compose
+    """
+    security_issues = []
+
+    # Jeśli podano konkretną ścieżkę do docker-compose
+    if docker_compose_path:
+        compose_file = Path(docker_compose_path)
+        if compose_file.exists():
+            security_issues.extend(_extract_security_issues_from_compose(compose_file))
+        else:
+            logging.warning(
+                f"Podany plik docker-compose nie istnieje: {docker_compose_path}"
+            )
+    else:
+        # Szukanie plików docker-compose w projekcie
+        compose_files = _find_docker_compose_files(proj_path)
+
+        for compose_file in compose_files:
+            logging.info(f"Skanuję problemy bezpieczeństwa w: {compose_file}")
+            security_issues.extend(_extract_security_issues_from_compose(compose_file))
+
+    return {
+        "tool": "docker_compose_scanner",
+        "type": "MISCONFIG_SCAN",
+        "results": [
+            {
+                "Target": str(proj_path),
+                "Type": "docker_compose_security",
+                "SecurityIssues": security_issues,
+            }
+        ],
+        "errors": "",
+    }
+
+
+def _extract_security_issues_from_compose(compose_file: Path) -> List[Dict[str, Any]]:
+    """
+    Wyciąga problemy bezpieczeństwa z pojedynczego pliku docker-compose
+    """
+    issues = []
+
+    try:
+        scanner = DockerComposeScanner()
+        scan_result = scanner.scan_docker_compose(str(compose_file))
+
+        # Wyciągnij security issues z wszystkich serwisów
+        for service_name, service_data in scan_result.get("services", {}).items():
+            service_issues = service_data.get("security_issues", [])
+            for issue in service_issues:
+                # Dodaj informacje o serwisie i pliku
+                issue_copy = issue.copy()
+                issue_copy["service_name"] = service_name
+                issue_copy["compose_file"] = str(compose_file)
+                issues.append(issue_copy)
+
+    except Exception as e:
+        logging.error(f"Błąd podczas skanowania bezpieczeństwa {compose_file}: {e}")
+
+    return issues
+
+
 def _generate_summary(results: Dict[str, Any]) -> Dict[str, Any]:
     """Generuje podsumowanie wyników skanowania"""
     summary = {
@@ -340,6 +404,7 @@ def _generate_summary(results: Dict[str, Any]) -> Dict[str, Any]:
         "bandit_issues": 0,
         "trivy_misconfig_issues": 0,
         "trivy_image_vulnerabilities": 0,
+        "docker_compose_security_issues": 0,
         "scanned_images": 0,
         "severity_breakdown": {
             "critical": 0,
@@ -374,6 +439,19 @@ def _generate_summary(results: Dict[str, Any]) -> Dict[str, Any]:
                 if severity in summary["severity_breakdown"]:
                     summary["severity_breakdown"][severity] += 1
 
+    # Docker Compose security issues
+    if "docker_compose_security" in results:
+        summary["total_scans"] += 1
+        docker_compose_results = results["docker_compose_security"].get("results", [])
+        for target in docker_compose_results:
+            summary["docker_compose_security_issues"] += len(
+                target.get("SecurityIssues", [])
+            )
+            for issue in target.get("SecurityIssues", []):
+                severity = issue.get("severity", "unknown").lower()
+                if severity in summary["severity_breakdown"]:
+                    summary["severity_breakdown"][severity] += 1
+
     # Trivy obrazy
     if "trivy_images" in results:
         summary["scanned_images"] = len(results["trivy_images"])
@@ -392,6 +470,7 @@ def _generate_summary(results: Dict[str, Any]) -> Dict[str, Any]:
         summary["bandit_issues"]
         + summary["trivy_misconfig_issues"]
         + summary["trivy_image_vulnerabilities"]
+        + summary["docker_compose_security_issues"]
     )
 
     return summary

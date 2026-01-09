@@ -31,6 +31,9 @@ def normalize_scan_results(results: Dict[str, Any]) -> Dict[str, Any]:
     # 3. Normalizacja problemów SAST (Bandit)
     _normalize_sast_issues(results.get("bandit", {}))
 
+    # 4. Normalizacja problemów Docker Compose Security
+    _normalize_docker_compose_security(results.get("docker_compose_security", {}))
+
     logging.info("Normalizacja zakończona")
 
     return results
@@ -122,6 +125,35 @@ def _normalize_sast_issues(bandit_results: Dict[str, Any]):
     logging.debug("SAST issues normalized")
 
 
+def _normalize_docker_compose_security(docker_compose_results: Dict[str, Any]):
+    """
+    Dodaje after_normalizing do każdego problemu Docker Compose Security
+    severity (1-10) * 0.35 (taka sama waga jak trivy_misconfig)
+    """
+    compose_results = docker_compose_results.get("results", [])
+
+    for target in compose_results:
+        security_issues = target.get("SecurityIssues", [])
+
+        for issue in security_issues:
+            # Konwertuj severity na wartość numeryczną (1-10)
+            severity_score = _convert_severity_to_numeric(
+                issue.get("severity", "UNKNOWN")
+            )
+
+            # Oblicz score dla tego problemu: severity * 0.35
+            compose_score = severity_score * 0.35
+
+            # Dodaj podobiekct after_normalizing do issue
+            issue["after_normalizing"] = {
+                "weight": 0.35,
+                "final_scoring": compose_score,
+                "severity_score": severity_score,
+            }
+
+    logging.debug("Docker Compose security normalized")
+
+
 def _extract_cvss_score(vulnerability: Dict[str, Any]) -> float:
     """
     Wyciąga CVSS score z podatności. Sprawdza różne możliwe lokalizacje.
@@ -150,10 +182,10 @@ def _extract_cvss_score(vulnerability: Dict[str, Any]) -> float:
 
     severity = vulnerability.get("Severity", "UNKNOWN").upper()
     severity_to_cvss = {
-        "CRITICAL": 90,
-        "HIGH": 75,
-        "MEDIUM": 50,
-        "LOW": 25,
+        "CRITICAL": 9.0,
+        "HIGH": 7.5,
+        "MEDIUM": 5.0,
+        "LOW": 2.5,
         "UNKNOWN": 0.0,
     }
 

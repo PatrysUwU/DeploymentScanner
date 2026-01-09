@@ -90,8 +90,7 @@ def _add_vulnerability_context(
     # Sprawdź wektor ataku z CVSS
     attack_vector = _extract_attack_vector(vuln)
 
-    if not has_open_ports:
-        # Jeśli wektor ataku to sieć, ale porty są zamknięte - zmniejsz wage
+    if attack_vector == "NETWORK" and not has_open_ports:
         context_wage = 0.1
         logging.debug(
             f"Vulnerability {vuln.get('VulnerabilityID', 'N/A')} w obrazie {image_name}: "

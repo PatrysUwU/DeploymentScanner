@@ -1,4 +1,4 @@
-FROM python:3.10.19-trixie
+FROM python:3.13.7-alpine
 
 RUN pip install flask
 
