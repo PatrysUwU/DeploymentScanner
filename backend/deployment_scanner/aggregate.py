@@ -46,14 +46,21 @@ def aggregate_scan(proj_path: str, docker_compose_path: Optional[str] = None) ->
         proj_path_obj, docker_compose_path
     )
 
-    # 4. WYCIĄGNIĘCIE OBRAZÓW Z DOCKER COMPOSE I SKANOWANIE
+    # 4. INICJALIZACJA TRIVY_IMAGES I SKANOWANIE ZALEŻNOŚCI
+    results["trivy_images"] = {}
+
+    # Skanowanie zależności (package-lock.json, requirements.txt, etc.)
+    logging.info("Uruchamianie skanu zależności...")
+    dependencies_result = trivy.scan_dependencies(str(proj_path_obj))
+    results["trivy_images"]["dependencies"] = dependencies_result
+
+    # 5. WYCIĄGNIĘCIE OBRAZÓW Z DOCKER COMPOSE I SKANOWANIE
     images_and_configs = _extract_images_with_config_from_project(
         proj_path_obj, docker_compose_path
     )
 
     if images_and_configs:
         logging.info(f"Znaleziono {len(images_and_configs)} obrazów do skanowania")
-        results["trivy_images"] = {}
 
         for image_data in images_and_configs:
             image = image_data["image"]
@@ -75,9 +82,8 @@ def aggregate_scan(proj_path: str, docker_compose_path: Optional[str] = None) ->
                 }
     else:
         logging.warning("Nie znaleziono obrazów do skanowania")
-        results["trivy_images"] = {}
 
-    # 4. GENEROWANIE PODSUMOWANIA
+    # 6. GENEROWANIE PODSUMOWANIA
     results["summary"] = _generate_summary(results)
 
     return results
@@ -364,7 +370,7 @@ def _scan_docker_compose_security(
             {
                 "Target": str(proj_path),
                 "Type": "docker_compose_security",
-                "SecurityIssues": security_issues,
+                "Vulnerabilities": security_issues,
             }
         ],
         "errors": "",
@@ -404,8 +410,10 @@ def _generate_summary(results: Dict[str, Any]) -> Dict[str, Any]:
         "bandit_issues": 0,
         "trivy_misconfig_issues": 0,
         "trivy_image_vulnerabilities": 0,
+        "trivy_dependency_vulnerabilities": 0,
         "docker_compose_security_issues": 0,
         "scanned_images": 0,
+        "scanned_dependency_files": 0,
         "severity_breakdown": {
             "critical": 0,
             "high": 0,
@@ -452,24 +460,43 @@ def _generate_summary(results: Dict[str, Any]) -> Dict[str, Any]:
                 if severity in summary["severity_breakdown"]:
                     summary["severity_breakdown"][severity] += 1
 
-    # Trivy obrazy
+    # Trivy obrazy i zależności
     if "trivy_images" in results:
-        summary["scanned_images"] = len(results["trivy_images"])
+        # Licz obrazy (pomijając specjalny klucz 'dependencies')
+        image_count = len([k for k in results["trivy_images"].keys() if k != "dependencies"])
+        summary["scanned_images"] = image_count
+
         for image_name, image_results in results["trivy_images"].items():
-            summary["total_scans"] += 1
-            image_scan_results = image_results.get("results", [])
-            for target in image_scan_results:
-                vulnerabilities = target.get("Vulnerabilities", [])
-                summary["trivy_image_vulnerabilities"] += len(vulnerabilities)
-                for vuln in vulnerabilities:
-                    severity = vuln.get("Severity", "unknown").lower()
-                    if severity in summary["severity_breakdown"]:
-                        summary["severity_breakdown"][severity] += 1
+            if image_name == "dependencies":
+                # Obsługuj skanowanie zależności
+                summary["total_scans"] += 1
+                dependency_scan_results = image_results.get("results", [])
+                summary["scanned_dependency_files"] = len(dependency_scan_results)
+
+                for target in dependency_scan_results:
+                    vulnerabilities = target.get("Vulnerabilities", [])
+                    summary["trivy_dependency_vulnerabilities"] += len(vulnerabilities)
+                    for vuln in vulnerabilities:
+                        severity = vuln.get("Severity", "unknown").lower()
+                        if severity in summary["severity_breakdown"]:
+                            summary["severity_breakdown"][severity] += 1
+            else:
+                # Obsługuj skanowanie obrazów
+                summary["total_scans"] += 1
+                image_scan_results = image_results.get("results", [])
+                for target in image_scan_results:
+                    vulnerabilities = target.get("Vulnerabilities", [])
+                    summary["trivy_image_vulnerabilities"] += len(vulnerabilities)
+                    for vuln in vulnerabilities:
+                        severity = vuln.get("Severity", "unknown").lower()
+                        if severity in summary["severity_breakdown"]:
+                            summary["severity_breakdown"][severity] += 1
 
     summary["total_issues"] = (
         summary["bandit_issues"]
         + summary["trivy_misconfig_issues"]
         + summary["trivy_image_vulnerabilities"]
+        + summary["trivy_dependency_vulnerabilities"]
         + summary["docker_compose_security_issues"]
     )
 

@@ -5,14 +5,14 @@
         "errors": "",
         "results": [
             {
-                "Target": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app",
+                "Target": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app",
                 "Type": "bandit",
                 "Vulnerabilities": [
                     {
                         "VulnerabilityID": "B403",
                         "Severity": "LOW",
                         "Description": "Consider possible security implications associated with pickle module.",
-                        "File": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app/backend/dangerous.py",
+                        "File": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/backend/dangerous.py",
                         "Line": 3,
                         "after_normalizing": {
                             "weight": 0.25,
@@ -24,7 +24,7 @@
                         "VulnerabilityID": "B404",
                         "Severity": "LOW",
                         "Description": "Consider possible security implications associated with the subprocess module.",
-                        "File": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app/backend/dangerous.py",
+                        "File": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/backend/dangerous.py",
                         "Line": 4,
                         "after_normalizing": {
                             "weight": 0.25,
@@ -36,7 +36,7 @@
                         "VulnerabilityID": "B105",
                         "Severity": "LOW",
                         "Description": "Possible hardcoded password: 'super_secret_password'",
-                        "File": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app/backend/dangerous.py",
+                        "File": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/backend/dangerous.py",
                         "Line": 7,
                         "after_normalizing": {
                             "weight": 0.25,
@@ -48,7 +48,7 @@
                         "VulnerabilityID": "B307",
                         "Severity": "MEDIUM",
                         "Description": "Use of possibly insecure function - consider using safer ast.literal_eval.",
-                        "File": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app/backend/dangerous.py",
+                        "File": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/backend/dangerous.py",
                         "Line": 12,
                         "after_normalizing": {
                             "weight": 0.25,
@@ -60,7 +60,7 @@
                         "VulnerabilityID": "B301",
                         "Severity": "MEDIUM",
                         "Description": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
-                        "File": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app/backend/dangerous.py",
+                        "File": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/backend/dangerous.py",
                         "Line": 18,
                         "after_normalizing": {
                             "weight": 0.25,
@@ -72,7 +72,7 @@
                         "VulnerabilityID": "B602",
                         "Severity": "HIGH",
                         "Description": "subprocess call with shell=True identified, security issue.",
-                        "File": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app/backend/dangerous.py",
+                        "File": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/backend/dangerous.py",
                         "Line": 25,
                         "after_normalizing": {
                             "weight": 0.25,
@@ -84,7 +84,7 @@
                         "VulnerabilityID": "B324",
                         "Severity": "HIGH",
                         "Description": "Use of weak MD5 hash for security. Consider usedforsecurity=False",
-                        "File": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app/backend/dangerous.py",
+                        "File": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/backend/dangerous.py",
                         "Line": 30,
                         "after_normalizing": {
                             "weight": 0.25,
@@ -96,7 +96,91 @@
                         "VulnerabilityID": "B101",
                         "Severity": "LOW",
                         "Description": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
-                        "File": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app/backend/dangerous.py",
+                        "File": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/backend/dangerous.py",
+                        "Line": 35,
+                        "after_normalizing": {
+                            "weight": 0.25,
+                            "final_scoring": 20,
+                            "severity_score": 20
+                        }
+                    },
+                    {
+                        "VulnerabilityID": "B403",
+                        "Severity": "LOW",
+                        "Description": "Consider possible security implications associated with pickle module.",
+                        "File": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/remediation/dangerous.py",
+                        "Line": 3,
+                        "after_normalizing": {
+                            "weight": 0.25,
+                            "final_scoring": 20,
+                            "severity_score": 20
+                        }
+                    },
+                    {
+                        "VulnerabilityID": "B404",
+                        "Severity": "LOW",
+                        "Description": "Consider possible security implications associated with the subprocess module.",
+                        "File": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/remediation/dangerous.py",
+                        "Line": 4,
+                        "after_normalizing": {
+                            "weight": 0.25,
+                            "final_scoring": 20,
+                            "severity_score": 20
+                        }
+                    },
+                    {
+                        "VulnerabilityID": "B307",
+                        "Severity": "MEDIUM",
+                        "Description": "Use of possibly insecure function - consider using safer ast.literal_eval.",
+                        "File": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/remediation/dangerous.py",
+                        "Line": 12,
+                        "after_normalizing": {
+                            "weight": 0.25,
+                            "final_scoring": 50,
+                            "severity_score": 50
+                        }
+                    },
+                    {
+                        "VulnerabilityID": "B301",
+                        "Severity": "MEDIUM",
+                        "Description": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+                        "File": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/remediation/dangerous.py",
+                        "Line": 18,
+                        "after_normalizing": {
+                            "weight": 0.25,
+                            "final_scoring": 50,
+                            "severity_score": 50
+                        }
+                    },
+                    {
+                        "VulnerabilityID": "B602",
+                        "Severity": "HIGH",
+                        "Description": "subprocess call with shell=True identified, security issue.",
+                        "File": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/remediation/dangerous.py",
+                        "Line": 25,
+                        "after_normalizing": {
+                            "weight": 0.25,
+                            "final_scoring": 80,
+                            "severity_score": 80
+                        }
+                    },
+                    {
+                        "VulnerabilityID": "B324",
+                        "Severity": "HIGH",
+                        "Description": "Use of weak MD5 hash for security. Consider usedforsecurity=False",
+                        "File": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/remediation/dangerous.py",
+                        "Line": 30,
+                        "after_normalizing": {
+                            "weight": 0.25,
+                            "final_scoring": 80,
+                            "severity_score": 80
+                        }
+                    },
+                    {
+                        "VulnerabilityID": "B101",
+                        "Severity": "LOW",
+                        "Description": "Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.",
+                        "File": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/remediation/dangerous.py",
                         "Line": 35,
                         "after_normalizing": {
                             "weight": 0.25,
@@ -113,7 +197,7 @@
         "type": "MISCONFIG_SCAN",
         "results": [
             {
-                "Target": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app",
+                "Target": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app",
                 "Type": "misconfig",
                 "Misconfigurations": [
                     {
@@ -511,14 +595,14 @@
                 ]
             }
         ],
-        "errors": "2026-01-09T17:28:38+01:00\tINFO\t[misconfig] Misconfiguration scanning is enabled\n2026-01-09T17:28:38+01:00\tINFO\t[terraform scanner] Scanning root module\tfile_path=\"terraform\"\n2026-01-09T17:28:38+01:00\tINFO\tNumber of language-specific files\tnum=0\n2026-01-09T17:28:38+01:00\tINFO\tDetected config files\tnum=3\n\n📣 \u001b[34mNotices:\u001b[0m\n  - Version 0.68.2 of Trivy is now available, current version is 0.67.2\n\nTo suppress version checks, run Trivy scans with the --skip-version-check flag\n\n"
+        "errors": "2026-01-09T20:16:20+01:00\tINFO\t[misconfig] Misconfiguration scanning is enabled\n2026-01-09T20:16:20+01:00\tINFO\t[terraform scanner] Scanning root module\tfile_path=\"terraform\"\n2026-01-09T20:16:20+01:00\tINFO\tNumber of language-specific files\tnum=1\n2026-01-09T20:16:20+01:00\tINFO\tDetected config files\tnum=3\n"
     },
     "docker_compose_security": {
         "tool": "docker_compose_scanner",
         "type": "MISCONFIG_SCAN",
         "results": [
             {
-                "Target": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app",
+                "Target": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app",
                 "Type": "docker_compose_security",
                 "SecurityIssues": [
                     {
@@ -528,25 +612,11 @@
                         "description": "Container has full access to host system",
                         "recommendation": "Remove 'privileged: true' and use specific capabilities instead",
                         "service_name": "web",
-                        "compose_file": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app/docker-compose.yml",
+                        "compose_file": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/docker-compose.yml",
                         "after_normalizing": {
                             "weight": 0.35,
                             "final_scoring": 28.0,
                             "severity_score": 80
-                        }
-                    },
-                    {
-                        "id": "COMPOSE_EXPOSED_PORT",
-                        "severity": "MEDIUM",
-                        "title": "Port exposed on all interfaces",
-                        "description": "Port 0.0.0.0:8080:8080 is accessible from any network interface",
-                        "recommendation": "Bind to localhost (127.0.0.1) instead of 0.0.0.0",
-                        "service_name": "web",
-                        "compose_file": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app/docker-compose.yml",
-                        "after_normalizing": {
-                            "weight": 0.35,
-                            "final_scoring": 17.5,
-                            "severity_score": 50
                         }
                     },
                     {
@@ -556,7 +626,7 @@
                         "description": "Environment variable DEBUG=true may pose security risk",
                         "recommendation": "Remove or set to secure value in production",
                         "service_name": "web",
-                        "compose_file": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app/docker-compose.yml",
+                        "compose_file": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/docker-compose.yml",
                         "after_normalizing": {
                             "weight": 0.35,
                             "final_scoring": 17.5,
@@ -570,7 +640,7 @@
                         "description": "Container processes run with root privileges",
                         "recommendation": "Create and use non-root user",
                         "service_name": "web",
-                        "compose_file": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app/docker-compose.yml",
+                        "compose_file": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/docker-compose.yml",
                         "after_normalizing": {
                             "weight": 0.35,
                             "final_scoring": 35.0,
@@ -583,6 +653,12 @@
         "errors": ""
     },
     "trivy_images": {
+        "dependencies": {
+            "tool": "trivy",
+            "type": "DEPENDENCY_SCAN",
+            "results": [],
+            "errors": ""
+        },
         "python:3.13.7-alpine": {
             "tool": "trivy",
             "type": "IMAGE_SCAN",
@@ -699,7 +775,7 @@
                                 "final_scoring": 56.0,
                                 "cvss_score": 5.6
                             },
-                            "context_wage": 1.0
+                            "context_wage": 0.1
                         },
                         {
                             "VulnerabilityID": "CVE-2025-9231",
@@ -723,7 +799,7 @@
                                 "final_scoring": 59.0,
                                 "cvss_score": 5.9
                             },
-                            "context_wage": 1.0
+                            "context_wage": 0.1
                         },
                         {
                             "VulnerabilityID": "CVE-2025-9232",
@@ -747,7 +823,7 @@
                                 "final_scoring": 31.0,
                                 "cvss_score": 3.1
                             },
-                            "context_wage": 1.0
+                            "context_wage": 0.1
                         },
                         {
                             "VulnerabilityID": "CVE-2025-9230",
@@ -771,7 +847,7 @@
                                 "final_scoring": 56.0,
                                 "cvss_score": 5.6
                             },
-                            "context_wage": 1.0
+                            "context_wage": 0.1
                         },
                         {
                             "VulnerabilityID": "CVE-2025-9231",
@@ -795,7 +871,7 @@
                                 "final_scoring": 59.0,
                                 "cvss_score": 5.9
                             },
-                            "context_wage": 1.0
+                            "context_wage": 0.1
                         },
                         {
                             "VulnerabilityID": "CVE-2025-9232",
@@ -819,7 +895,7 @@
                                 "final_scoring": 31.0,
                                 "cvss_score": 3.1
                             },
-                            "context_wage": 1.0
+                            "context_wage": 0.1
                         },
                         {
                             "VulnerabilityID": "CVE-2024-58251",
@@ -886,18 +962,16 @@
                                 "final_scoring": 53.0,
                                 "cvss_score": 5.3
                             },
-                            "context_wage": 1.0
+                            "context_wage": 0.1
                         }
                     ]
                 }
             ],
-            "errors": "2026-01-09T17:28:38+01:00\tINFO\t[vuln] Vulnerability scanning is enabled\n2026-01-09T17:28:38+01:00\tINFO\t[secret] Secret scanning is enabled\n2026-01-09T17:28:38+01:00\tINFO\t[secret] If your scanning is slow, please try '--scanners vuln' to disable secret scanning\n2026-01-09T17:28:38+01:00\tINFO\t[secret] Please see https://trivy.dev/v0.67/docs/scanner/secret#recommendation for faster secret detection\n2026-01-09T17:28:40+01:00\tINFO\tDetected OS\tfamily=\"alpine\" version=\"3.22.1\"\n2026-01-09T17:28:40+01:00\tINFO\t[alpine] Detecting vulnerabilities...\tos_version=\"3.22\" repository=\"3.22\" pkg_num=29\n2026-01-09T17:28:40+01:00\tINFO\tNumber of language-specific files\tnum=1\n2026-01-09T17:28:40+01:00\tINFO\t[python-pkg] Detecting vulnerabilities...\n2026-01-09T17:28:40+01:00\tWARN\tUsing severities from other vendors for some vulnerabilities. Read https://trivy.dev/v0.67/docs/scanner/vulnerability#severity-selection for details.\n\n📣 \u001b[34mNotices:\u001b[0m\n  - Version 0.68.2 of Trivy is now available, current version is 0.67.2\n\nTo suppress version checks, run Trivy scans with the --skip-version-check flag\n\n",
+            "errors": "2026-01-09T20:16:21+01:00\tINFO\t[vuln] Vulnerability scanning is enabled\n2026-01-09T20:16:21+01:00\tINFO\t[secret] Secret scanning is enabled\n2026-01-09T20:16:21+01:00\tINFO\t[secret] If your scanning is slow, please try '--scanners vuln' to disable secret scanning\n2026-01-09T20:16:21+01:00\tINFO\t[secret] Please see https://trivy.dev/docs/v0.68/guide/scanner/secret#recommendation for faster secret detection\n2026-01-09T20:16:22+01:00\tINFO\tDetected OS\tfamily=\"alpine\" version=\"3.22.1\"\n2026-01-09T20:16:22+01:00\tINFO\t[alpine] Detecting vulnerabilities...\tos_version=\"3.22\" repository=\"3.22\" pkg_num=29\n2026-01-09T20:16:22+01:00\tINFO\tNumber of language-specific files\tnum=1\n2026-01-09T20:16:22+01:00\tINFO\t[python-pkg] Detecting vulnerabilities...\n2026-01-09T20:16:22+01:00\tWARN\tUsing severities from other vendors for some vulnerabilities. Read https://trivy.dev/docs/v0.68/guide/scanner/vulnerability#severity-selection for details.\n",
             "container_config": {
                 "service_name": "web",
                 "image": "custom",
-                "ports": [
-                    "0.0.0.0:8080:8080"
-                ],
+                "ports": [],
                 "environment": {
                     "DEBUG": "true"
                 },
@@ -908,22 +982,40 @@
                 "command": null,
                 "source_files": [
                     {
-                        "path": "scan_results.json",
-                        "full_path": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app/scan_results.json",
-                        "extension": ".json",
-                        "size": 54496
+                        "path": "backend/dangerous.py",
+                        "full_path": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/backend/dangerous.py",
+                        "extension": ".py",
+                        "size": 1025
                     },
                     {
                         "path": "docker-compose.yml",
-                        "full_path": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app/docker-compose.yml",
+                        "full_path": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/docker-compose.yml",
                         "extension": ".yml",
-                        "size": 198
+                        "size": 159
                     },
                     {
-                        "path": "backend/dangerous.py",
-                        "full_path": "/home/patrys/repos/deployment_scanner/examples/insecure-cloud-app/backend/dangerous.py",
+                        "path": "scan_results.json",
+                        "full_path": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/scan_results.json",
+                        "extension": ".json",
+                        "size": 64106
+                    },
+                    {
+                        "path": "remediation/dangerous.py",
+                        "full_path": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/remediation/dangerous.py",
                         "extension": ".py",
-                        "size": 1025
+                        "size": 1047
+                    },
+                    {
+                        "path": "frontend/package-lock.json",
+                        "full_path": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/frontend/package-lock.json",
+                        "extension": ".json",
+                        "size": 10245
+                    },
+                    {
+                        "path": "frontend/package.json",
+                        "full_path": "/home/patrys/DeploymentScanner/examples/insecure-cloud-app/frontend/package.json",
+                        "extension": ".json",
+                        "size": 274
                     }
                 ],
                 "mounted_code": [],
@@ -940,26 +1032,28 @@
         }
     },
     "summary": {
-        "total_scans": 4,
-        "bandit_issues": 8,
+        "total_scans": 5,
+        "bandit_issues": 15,
         "trivy_misconfig_issues": 22,
         "trivy_image_vulnerabilities": 13,
-        "docker_compose_security_issues": 4,
+        "trivy_dependency_vulnerabilities": 0,
+        "docker_compose_security_issues": 3,
         "scanned_images": 1,
+        "scanned_dependency_files": 0,
         "severity_breakdown": {
             "critical": 2,
-            "high": 14,
-            "medium": 15,
-            "low": 16,
+            "high": 16,
+            "medium": 16,
+            "low": 19,
             "unknown": 0
         },
-        "total_issues": 47,
+        "total_issues": 53,
         "risk_scores": {
-            "bandit": 42.5,
-            "trivy_images": 45.69230769230769,
-            "misconfig": 52.61538461538461,
-            "weighted_final": 47.31730769230769
+            "bandit": 44.0,
+            "trivy_images": 23.048780487804873,
+            "misconfig": 54.02,
+            "weighted_final": 39.12651219512195
         }
     },
-    "final_security_score": 52.68269230769231
+    "final_security_score": 60.87348780487805
 }

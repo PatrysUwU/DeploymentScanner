@@ -8,7 +8,7 @@ from deployment_scanner import aggregate, contextualize, normalize, remediate
 logging.basicConfig(level="DEBUG")
 
 
-def scan(proj_path: str, output_file="") -> dict:
+def scan(proj_path: str, output=True) -> dict:
     results = aggregate.aggregate_scan(proj_path)
     normalized_results = normalize.normalize_scan_results(results)
     contextualized_results = contextualize.contextualize_scan_results(
@@ -19,7 +19,8 @@ def scan(proj_path: str, output_file="") -> dict:
     security_score = _calculate_security_score(contextualized_results)
     contextualized_results["final_security_score"] = security_score
 
-    if output_file != "":
+
+    if output:
         with open(proj_path + "/scan_results.json", "w") as f:
             json.dump(contextualized_results, f, indent=4, ensure_ascii=False)
 
@@ -27,8 +28,9 @@ def scan(proj_path: str, output_file="") -> dict:
 
 
 def remediate_repo(proj_path: str):
-    scan_results = scan(proj_path)
+    scan_results = scan(proj_path, output=False)
     remediated_dir = f"{proj_path}/remediation"
+    os.makedirs(remediated_dir, exist_ok=True)
     print(proj_path)
     print(remediated_dir)
     remediate.remediate_repo(scan_results, proj_path, remediated_dir)
@@ -64,7 +66,8 @@ def _calculate_security_score(results: dict) -> float:
                     after_norm = vuln["after_normalizing"]
                     final_scoring = after_norm.get("final_scoring", 0.0)
                     context_wage = vuln.get("context_wage", 1.0)
-
+                    if context_wage != 1:
+                        trivy_images_count -= context_wage
                     weighted_score = final_scoring * context_wage
                     trivy_images_total += weighted_score
                     trivy_images_count += 1
@@ -83,6 +86,8 @@ def _calculate_security_score(results: dict) -> float:
                 after_norm = misconfig["after_normalizing"]
                 final_scoring = after_norm.get("final_scoring", 0.0)
                 context_wage = misconfig.get("context_wage", 1.0)
+                if context_wage != 1:
+                    trivy_misconfig_count -= context_wage
 
                 weighted_score = final_scoring * context_wage
                 trivy_misconfig_total += weighted_score
@@ -104,6 +109,9 @@ def _calculate_security_score(results: dict) -> float:
                 after_norm = vuln["after_normalizing"]
                 final_scoring = after_norm.get("final_scoring", 0.0)
                 context_wage = vuln.get("context_wage", 1.0)
+
+                if context_wage != 1:
+                    trivy_misconfig_count -= context_wage
 
                 weighted_score = final_scoring * context_wage
                 bandit_total += weighted_score
